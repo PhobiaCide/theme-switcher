@@ -1,176 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
     <title>
-      CodePen - How to Build a Simple Theme Switcher With the CSS Checkbox Hack
+      Sci-Fi Theme Switcher
     </title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&amp;display=swap"
     />
-    <style>
-      /* RESET STYLES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-size: 22px;
-      }
-
-      a {
-        color: inherit;
-      }
-
-      label {
-        cursor: pointer;
-      }
-
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        width: 100%;
-      }
-
-      .theme-dune {
-        /*dune*/
-        --color-primary: #de8735;
-        --font-color: #a11225;
-        --color-secondary: #f4c16e;
-        --color-accent: #b5a492;
-      }
-
-      .theme-jurassic-park {
-        /*jurassic-park*/
-        --color-primary: #4b4921;
-        --font-color: #f01c1f;
-        --color-secondary: #2a8a56;
-        --color-accent: #66d848;
-      }
-
-      .theme-back-to-the-future {
-        /*back-to-the-future*/
-        --color-primary: #e02411;
-        --font-color: #1e4ea0;
-        --color-secondary: #ffa913;
-        --color-accent: #569ced;
-      }
-
-      .theme-close-encounters-of-the-third-kind {
-        /*close-encounters-of-the-third-kind*/
-        --color-primary: #84caec;
-        --font-color: #fcec86;
-        --color-secondary: #efb7dc;
-        --color-accent: #ff9969;
-      }
-
-      .theme-star-wars-tatooine-jakku {
-        /*star-wars-tatooine-jakku*/
-        --color-primary: #dba05c;
-        --font-color: #9995bc;
-        --color-secondary: #e9cca4;
-        --color-accent: #8eafd8;
-      }
-
-      .theme-alien {
-        /*alien*/
-        --color-primary: #d2ff06;
-        --font-color: #042a05;
-        --color-secondary: #15aa5c;
-        --color-accent: #258073;
-      }
-
-      .theme-star-wars {
-        /*star-wars*/
-        --color-primary: #27343a;
-        --font-color: #ff0022;
-        --color-secondary: #9ea5a8;
-        --color-accent: #ff6800;
-      }
-
-      .theme-blade-runner {
-        /*blade-runner*/
-        --color-primary: #d88f00;
-        --font-color: #812a89;
-        --color-secondary: #efca93;
-        --color-accent: #ff6cdc;
-      }
-
-      .theme-the-matrix {
-        /*the-matrix*/
-        --color-primary: #031624;
-        --font-color: #30ffa4;
-        --color-secondary: #044b4a;
-        --color-accent: #5fbe92;
-      }
-
-      .theme-the-fifth-element {
-        /*the-fifth-element*/
-        --color-primary: #f3f1ed;
-        --font-color: #0b190c;
-        --color-secondary: #fffd6e;
-        --color-accent: #ff6100;
-      }
-
-      body {
-        font: 300 20px / 1.5 "Ubuntu", sans-serif;
-      }
-
-      /* MAIN STYLES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-      p {
-        color: var(--color-accent);
-      }
-
-      .container {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        background: var(--color-secondary);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .container h1 {
-        color: var(--font-color);
-        text-shadow: 1px 1px var(--color-primary),
-        -1px 1px var(--color-primary),
-        -1px -1px var(--color-primary),
-        1px -1px var(--color-primary);
-      }
-
-table {
-  background-color: var(--color-primary);
-  padding: 2vw;
-}
-
-      hr {
-        margin: 2vw;
-        background-image: linear-gradient(
-          90deg,
-          var(--color-secondary) 0%,
-          var(--color-accent) 30%,
-          var(--color-accent) 70%,
-          var(--color-secondary) 100%
-        );
-        width: 90%;
-        height: 11px;
-        filter: blur(3px);
-      }
-
-      .container button {
-        color: var(--color-primary);
-        background: var(--color-secondary);
-        padding: 10px 20px;
-        border: 3px outset var(--font-color);
-        border-radius: 5px;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+      
   </head>
 
   <body>
@@ -239,25 +83,6 @@ table {
       <hr />
     </div>
 
-    <script>
-      function changeTheme(theme) {
-        // remove all theme classes from body
-        document.body.className = ``;
-        // add class for selected theme
-        document.body.classList.add(`theme-${theme}`);
-        //
-        document.getElementById("header").innerHTML = titleCase(theme);
-      }
-
-      function titleCase(str) {
-        return str
-          .toLowerCase()
-          .split("-")
-          .map((word) => {
-            return word.charAt(0).toUpperCase() + word.slice(1);
-          })
-          .join(" ");
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
