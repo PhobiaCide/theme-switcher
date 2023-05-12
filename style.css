@@ -131,7 +131,7 @@ p
 
 h1,h2
 {
-	text-shadow:-2px -2px var(--color-accent),2px 2px var(--color-accent),-2px 2px var(--color-accent),2px -2px var(--color-accent),3px 3px 7px var(--color-secondary)
+	text-shadow:-2px 0 1px var(--color-accent),2px 0 1px var(--color-accent),0 2px 1px var(--color-accent),0 -2px 1px var(--color-accent),3px 3px 7px var(--color-secondary)
 }
 
 h2
