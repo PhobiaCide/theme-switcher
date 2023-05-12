@@ -129,9 +129,9 @@ body {
   }
 
   h1,h2 {
-    text-shadow: 2px 2px var(--color-accent),
+    text-shadow: -2px -2px var(--color-accent),
+    2px 2px var(--color-accent),
     -2px 2px var(--color-accent),
-    -2px -2px var(--color-accent),
     2px -2px var(--color-accent),
     3px 3px 7px var(--color-secondary);
   }
