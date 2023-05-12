@@ -1,172 +1,169 @@
-/* RESET STYLES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-body {
---color-primary: #fff;
---font-color: #000;
--- color-secondary: #555;
---color-accent: #ccc;
-}
-  .theme-dune {
-    /*dune*/
-    --color-primary: #de8735;
-    --font-color: #a11225;
-    --color-secondary: #f4c16e;
-    --color-accent: #b5a492;
-  }
-
-  .theme-jurassic-park {
-    /*jurassic-park*/
-    --color-primary: #4b4921;
-    --font-color: #f01c1f;
-    --color-secondary: #2a8a56;
-    --color-accent: #66d848;
-  }
-
-  .theme-back-to-the-future {
-    /*back-to-the-future*/
-    --color-primary: #e02411;
-    --font-color: #1e4ea0;
-    --color-secondary: #ffa913;
-    --color-accent: #569ced;
-  }
-
-  .theme-close-encounters-of-the-third-kind {
-    /*close-encounters-of-the-third-kind*/
-    --color-primary: #84caec;
-    --font-color: #fcec86;
-    --color-secondary: #efb7dc;
-    --color-accent: #ff9969;
-  }
-
-  .theme-star-wars-tatooine-jakku {
-    /*star-wars-tatooine-jakku*/
-    --color-primary: #dba05c;
-    --font-color: #9995bc;
-    --color-secondary: #e9cca4;
-    --color-accent: #8eafd8;
-  }
-
-  .theme-alien {
-    /*alien*/
-    --color-primary: #d2ff06;
-    --font-color: #042a05;
-    --color-secondary: #15aa5c;
-    --color-accent: #258073;
-  }
-
-  .theme-star-wars {
-    /*star-wars*/
-    --color-primary: #27343a;
-    --font-color: #ff0022;
-    --color-secondary: #9ea5a8;
-    --color-accent: #ff6800;
-  }
-
-  .theme-blade-runner {
-    /*blade-runner*/
-    --color-primary: #d88f00;
-    --font-color: #812a89;
-    --color-secondary: #efca93;
-    --color-accent: #ff6cdc;
-  }
-
-  .theme-the-matrix {
-    /*the-matrix*/
-    --color-primary: #031624;
-    --font-color: #30ffa4;
-    --color-secondary: #044b4a;
-    --color-accent: #5fbe92;
-  }
-
-  .theme-the-fifth-element {
-    /*the-fifth-element*/
-    --color-primary: #f3f1ed;
-    --font-color: #0b190c;
-    --color-secondary: #fffd6e;
-    --color-accent: #ff6100;
-  }
-
-
-  body {
-    font: 300 20px / 1.5 "Ubuntu", sans-serif;
-  }
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-size: 4vw;
-    color: var(--font-color);
-    background-color: var(--color-primary);
-  }
-
-  a {
-    color: inherit;
-  }
-
-  label {
-    cursor: pointer;
-  }
-
-  html,
-  body {
-    margin: 10px;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-  }
-  /* MAIN STYLES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-  p {
-    font-size: 22px;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  h1,h2 {
-    text-shadow: -2px -2px var(--color-accent),
-    2px 2px var(--color-accent),
-    -2px 2px var(--color-accent),
-    2px -2px var(--color-accent),
-    3px 3px 7px var(--color-secondary);
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-table {
-padding: 2vw;
+/* Default theme */
+body
+{
+	--color-primary:#fff;
+	--font-color:#000;
+	--color-secondary:#555;
+	--color-accent:#ccc;
+	font:300 20px / 1.5 Ubuntu,sans-serif
 }
 
-  hr {
-    margin: 2vw;
-    background-image: linear-gradient(
-      90deg,
-      rgba(0,0,0,0) 0%,
-      var(--color-accent) 50%,
-      rgba(0,0,0,0) 100%
-    );
-    width: 90vw;
-    height: 22px;
-    border: 1px solid var(--color-secondary);
-    border-radius: 100%;
-    filter: blur(3px) drop-shadow(3px 3px 3px var(--color-secondary));
-    transform: scale(1,.5);
+.theme-dune
+{
+	--color-primary:#de8735;
+	--font-color:#a11225;
+	--color-secondary:#f4c16e;
+	--color-accent:#b5a492
+}
 
-  }
+.theme-jurassic-park
+{
+	--color-primary:#4b4921;
+	--font-color:#f01c1f;
+	--color-secondary:#2a8a56;
+	--color-accent:#66d848
+}
 
-  button {
-    margin: 3px;
-    background-color: var(--color-primary);
-    font-size: 3vh;
-    text-shadow: 1px 1px 0px var(--color-accent);
-    padding: 10px 20px;
-    border: 7px outset var(--color-secondary);
-    border-radius: 30px;
-    box-shadow: 3px 3px 7px var(--color-accent);
-  }
+.theme-back-to-the-future
+{
+	--color-primary:#e02411;
+	--font-color:#1e4ea0;
+	--color-secondary:#ffa913;
+	--color-accent:#569ced
+}
+
+.theme-close-encounters-of-the-third-kind
+{
+	--color-primary:#84caec;
+	--font-color:#fcec86;
+	--color-secondary:#efb7dc;
+	--color-accent:#ff9969
+}
+
+.theme-star-wars-tatooine-jakku
+{
+	--color-primary:#dba05c;
+	--font-color:#9995bc;
+	--color-secondary:#e9cca4;
+	--color-accent:#8eafd8
+}
+
+.theme-alien
+{
+	--color-primary:#d2ff06;
+	--font-color:#042a05;
+	--color-secondary:#15aa5c;
+	--color-accent:#258073
+}
+
+.theme-star-wars
+{
+	--color-primary:#27343a;
+	--font-color:#f02;
+	--color-secondary:#9ea5a8;
+	--color-accent:#ff6800
+}
+
+.theme-blade-runner
+{
+	--color-primary:#d88f00;
+	--font-color:#812a89;
+	--color-secondary:#efca93;
+	--color-accent:#ff6cdc
+}
+
+.theme-the-matrix
+{
+	--color-primary:#031624;
+	--font-color:#30ffa4;
+	--color-secondary:#044b4a;
+	--color-accent:#5fbe92
+}
+
+.theme-the-fifth-element
+{
+	--color-primary:#f3f1ed;
+	--font-color:#0b190c;
+	--color-secondary:#fffd6e;
+	--color-accent:#ff6100
+}
+
+*
+{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	font-size:4vw;
+	color:var(--font-color);
+	background-color:var(--color-primary)
+}
+
+a
+{
+	color:inherit
+}
+
+label
+{
+	cursor:pointer
+}
+
+html,body
+{
+	margin:10px;
+	padding:0;
+	height:100%;
+	width:100%
+}
+
+p
+{
+	font-size:22px
+}
+
+.container
+{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center
+}
+
+h1,h2
+{
+	text-shadow:-2px -2px var(--color-accent),2px 2px var(--color-accent),-2px 2px var(--color-accent),2px -2px var(--color-accent),3px 3px 7px var(--color-secondary)
+}
+
+h2
+{
+	font-size:32px
+}
+
+table
+{
+	padding:2vw
+}
+
+hr
+{
+	margin:2vw;
+	background-image:linear-gradient(90deg,rgba(0,0,0,0) 0%,var(--color-accent) 50%,rgba(0,0,0,0) 100%);
+	width:90vw;
+	height:22px;
+	border:1px solid var(--color-secondary);
+	border-radius:100%;
+	filter:blur(3px) drop-shadow(3px 3px 3px var(--color-secondary));
+	transform:scale(1,.5)
+}
+
+button
+{
+	margin:3px;
+	background-color:var(--color-primary);
+	font-size:3vh;
+	text-shadow:1px 1px 0 var(--color-accent);
+	padding:10px 20px;
+	border:7px outset var(--color-secondary);
+	border-radius:30px;
+	box-shadow:3px 3px 7px var(--color-accent)
+}
