@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  
-    <title>
-      Sci-Fi Theme Switcher
-    </title>
+    <title>Sci-Fi Theme Switcher</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&amp;display=swap"
     />
     <link rel="stylesheet" href="style.css" />
-      
   </head>
 
   <body>
     <div class="container">
-      <h1 id="header"></h1>
+      <h1 id="header">Theme Switcher</h1>
+      <p>
+        This is a prototype as well as a proof of concept to be used as a
+        feature in future projects.
+      </p>
       <hr />
+      <h2>Light Themes</h2>
       <table>
         <tbody>
           <tr>
             <td>
-              <button onclick="changeTheme('dune')">Dune</button>
+              <button onclick="changeTheme('the-fifth-element')">
+                The&nbsp;Fifth&nbsp;Element
+              </button>
             </td>
             <td>
-              <button onclick="changeTheme('jurassic-park')">
-                Jurassic&nbsp;Park
-              </button>
+              <button onclick="changeTheme('alien')">Alien</button>
             </td>
             <td>
               <button onclick="changeTheme('back-to-the-future')">
@@ -46,18 +47,21 @@
               <button
                 onclick="changeTheme('close-encounters-of-the-third-kind')"
               >
-                Close&nbsp;Encounters&nbsp;of&nbsp;the&nbsp;Third&nbsp;Kind
+                Close&nbsp;Encounters
               </button>
             </td>
           </tr>
         </tbody>
       </table>
       <hr />
+      <h2>Dark Themes</h2>
       <table>
         <tbody>
           <tr>
             <td>
-              <button onclick="changeTheme('alien')">Alien</button>
+              <button onclick="changeTheme('jurassic-park')">
+                Jurassic&nbsp;Park
+              </button>
             </td>
             <td>
               <button onclick="changeTheme('star-wars')">Star&nbsp;Wars</button>
@@ -73,9 +77,7 @@
               </button>
             </td>
             <td>
-              <button onclick="changeTheme('the-fifth-element')">
-                The&nbsp;Fifth&nbsp;Element
-              </button>
+              <button onclick="changeTheme('dune')">Dune</button>
             </td>
           </tr>
         </tbody>

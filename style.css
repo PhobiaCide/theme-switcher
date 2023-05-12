@@ -1,7 +1,11 @@
 /* RESET STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
+body {
+--color-primary: #fff;
+--font-color: #000;
+-- color-secondary: #555;
+--color-accent: #ccc;
+}
   .theme-dune {
     /*dune*/
     --color-primary: #de8735;
@@ -90,7 +94,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: 5vw;
+    font-size: 4vw;
     color: var(--font-color);
     background-color: var(--color-primary);
   }
@@ -105,7 +109,7 @@
 
   html,
   body {
-    margin: 0;
+    margin: 10px;
     padding: 0;
     height: 100%;
     width: 100%;
@@ -114,25 +118,27 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
   p {
-    
+    font-size: 22px;
   }
 
   .container {
-    margin: 5vh 5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .container h1 {
+  h1,h2 {
     text-shadow: 2px 2px var(--color-accent),
     -2px 2px var(--color-accent),
     -2px -2px var(--color-accent),
     2px -2px var(--color-accent),
-    7px 7px 14px black;
+    3px 3px 7px var(--color-secondary);
   }
 
+  h2 {
+    font-size: 32px;
+  }
 table {
 padding: 2vw;
 }
@@ -142,24 +148,25 @@ padding: 2vw;
     background-image: linear-gradient(
       90deg,
       rgba(0,0,0,0) 0%,
-      var(--color-accent) 30%,
-      var(--color-accent) 70%,
+      var(--color-accent) 50%,
       rgba(0,0,0,0) 100%
     );
-    width: 100vw;
-    height: 44px;
+    width: 90vw;
+    height: 14px;
+    border:0;
     border-radius: 100%;
-    filter: blur(7px) drop-shadow(7px 7px 14px black);
+    filter: blur(3px) drop-shadow(3px 3px 3px var(--color-secondary));
     transform: scale(1,.5);
 
   }
 
-  .container button {
-    background-color: var(--color-secondary);
+  button {
+    margin: 3px;
+    background-color: var(--color-primary);
     font-size: 3vh;
-    text-shadow: 3px 3px 6px black;
+    text-shadow: 1px 1px 0px var(--color-accent);
     padding: 10px 20px;
-    border: 5px outset var(--color-accent);
-    border-radius: 5px;
-    box-shadow: 7px 7px 14px black;
+    border: 7px outset var(--color-secondary);
+    border-radius: 30px;
+    box-shadow: 3px 3px 7px var(--color-accent);
   }
