@@ -1,0 +1,25 @@
+{
+  "name": "theme-switcher",
+  "version": "1.0.0",
+  "description": "Demonstrates the ability to change a page's theme at the push of a button",
+  "main": "index.html",
+  "scripts": {
+    "test": "@command:extension.liveServer.goOnline"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhobiaCide/theme-switcher.git"
+  },
+  "keywords": [
+    "[\"Eve",
+    "Online\"",
+    "\"Web",
+    "Dev\"]"
+  ],
+  "author": "PhobiaCide",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PhobiaCide/theme-switcher/issues"
+  },
+  "homepage": "https://github.com/PhobiaCide/theme-switcher#readme"
+}
