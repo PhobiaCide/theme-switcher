@@ -18,7 +18,7 @@
 
 ### Screenshot
 
-![Screenshot][product-screenshot] [^1]
+ [^1]
 
 [^1]: 📸 Screenshot of the default theme
 
