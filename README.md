@@ -1,6 +1,6 @@
 # 🎨 Theme Switcher
 
-> The Theme Switcher is a tool🛠 that allows users to easily switch between different visual themes on a website🕶. It provides a selection of predefined CSS variables, which users can choose from and apply to customize the appearance of the website.
+> The Theme Switcher is a 🛠 tool that allows users to easily switch between different visual themes on a website🕶. It provides a selection of predefined CSS variables, which users can choose from and apply to customize the appearance of the website.
 
 [![Language Count][language-count-shield]][language-count-url]
 [![Contributors][contributors-shield]][contributors-url]
@@ -16,11 +16,11 @@
 - Instantly apply theme changes for immediate visual feedback.
 - Easy integration into any website using JavaScript.
 
-### Screenshot
+### Screenshot 📸
 
 ![Screenshot][product-screenshot] [^1]
 
-[^1]: 📸 Screenshot of the default theme
+[^1]: Screenshot of the default theme
 
 <p align="right"><a href="#-theme-switcher">🔗back to top</a></p>
 
@@ -65,7 +65,7 @@ To see the Theme Switcher in action, click [here][demo-url]. [^2]
 
 ---
 
-## Development Prerquisites 🔰
+## Development Prerequisites 🔰
 
 To develop with the Theme Switcher, a basic understanding of HTML, CSS, and JavaScript is required.
 
@@ -100,11 +100,13 @@ Contributions to the Theme Switcher project are welcome! To contribute, follow t
 4. Make the necessary changes to the codebase using your preferred editor or IDE.
 
 5. **Stage** and **commit** your changes.
-You can use the following commands:
+   You can use the following commands:
 
    ```bash
    git add .
-   git commit -m "Add your commit message here"
+   git commit -m "Add your
+
+ commit message here"
    ```
 
    Replace "Add your commit message here" with a concise and descriptive commit message explaining your changes.
@@ -127,13 +129,13 @@ You can use the following commands:
 
 11. **Click** the "*Create pull request*" **button** to *submit* your contribution.
 
-12. **Your** pull request will be *reviewed* by the "project maintainers".
+12. **Your** pull request will be *reviewed* by the project maintainers.
 
-    "They" may provide feedback or request further changes.
+    They may provide feedback or request further changes.
 
-13. Once your changes are **approved**, they will be **merged** into the *main repository*.
+13. Once your changes are **approved**, they will be **merged** into the main repository.
 
-**Thank you** for contributing to the Theme Switcher project! "We" **appreciate** your support and effort in making this project better.
+**Thank you** for contributing to the Theme Switcher project! We appreciate your support and effort in making this project better.
 
 <p align="right"><a href="#-theme-switcher">🔗back to top</a></p>
 
@@ -141,7 +143,7 @@ You can use the following commands:
 
 ## Meta 📝
 
-(c) 2023 [PhobiaCide][github-profile]
+&copy; 2023 [PhobiaCide][github-profile]
 
 Distributed under the MIT license. See [LICENSE][license-url] for more information.
 
