@@ -553,4 +553,4 @@ Distributed under the MIT license. See [LICENSE][license-url] for more informati
 [issues-url]: https://github.com/PhobiaCide/theme-switcher/issues
 [license-shield]: https://img.shields.io/github/license/PhobiaCide/theme-switcher?style=for-the-badge
 [license-url]: https://github.com/PhobiaCide/theme-switcher/LICENSE.md
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/theme-switcher.gif
