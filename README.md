@@ -20,7 +20,7 @@
 
 ![Screenshot][product-screenshot] [^1]
 
-[^1]: Screenshot of the default theme
+[^1]: Screenshot of the demo project in the default theme(colorless)
 
 <p align="right"><a href="#-theme-switcher">🔗back to top</a></p>
 
