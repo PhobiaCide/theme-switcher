@@ -139,7 +139,7 @@ Here's the code:
               </tr>
               <tr>
                 <td>
-                  <button onclick="changeTheme('close-encounters-of-the-third-kind')">
+                  <button onclick="changeTheme('close-encounters')">
                     Close&nbsp;Encounters
                   </button>
                 </td>
@@ -235,7 +235,8 @@ Here's the code:
 
 ```css
 /* just some standard style resets */
-* {
+* 
+{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -244,13 +245,11 @@ Here's the code:
   overflow: hidden;
   font: 500 2.5vh / 1.5 Ubuntu, sans-serif;
 }
-
+/* Default theme */
 body 
 {
-  /* Colorless default theme */
   background-color: var(--color-primary);
   --color-primary: #eee;
-  color: var(--font-color);
   --color-secondary: #555;
   --color-accent: #aaa;
 }
@@ -391,7 +390,7 @@ h2
 {
   font-size: 4vh;
 }
-h1 
+h1
 {
   font-size: 5vh;
   height: 15vh;
@@ -424,7 +423,7 @@ hr
   outline-color: var(--color-secondary);
   transform: scale(40, 1);
 }
-button 
+button
 {
   font-weight: 700;
   color: var(--font-color);
