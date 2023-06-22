@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   background-color: var(--bg-color);
-  color: var(--color);
+  color: var(--font-color);
   overflow: hidden;
   font: 500 2.5vh / 1.5 Ubuntu, sans-serif;
 }
@@ -12,7 +12,6 @@
 body {
   background-color: var(--color-primary);
   --color-primary: #eee;
-  color: var(--font-color);
   --color-secondary: #555;
   --color-accent: #aaa;
 }
