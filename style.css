@@ -3,14 +3,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: var(--bg-color);
-  color: var(--font-color);
   overflow: hidden;
-  font: 500 2.5vh / 1.5 Ubuntu, sans-serif;
+  font: 500 calc((12px + 2.5vh) / 2) / 1.5 Ubuntu, sans-serif;
 }
 /* Default theme */
 body 
 {
+  color: var(--color);
   background-color: var(--color-primary);
   --color-primary: #eee;
   --color-secondary: #555;
@@ -194,7 +193,7 @@ button
   color: var(--font-color);
   margin: 2px;
   background-color: var(--color-secondary);
-  font-size: 2.6vh;
+  font-size: calc((2vw + 2vh) / 2);
   max-width: 100%;
   text-shadow: 1px 1px 0 var(--color-accent);
   padding: 0.6vh 1.2vw;

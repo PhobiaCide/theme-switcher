@@ -60,7 +60,7 @@ To develop with the Theme Switcher, a basic understanding of HTML, CSS, and Java
 theme-switcher/
 └── images/
 │   ├── README.md
-│   └── screenshot.png
+│   └── theme-switcher.gif
 ├── index.html
 ├── LICENSE.md
 ├── package.json

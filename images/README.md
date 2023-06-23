@@ -13,4 +13,4 @@ images/
 
 | File Name       | Description                                                                                        |
 | --------------- | -------------------------------------------------------------------------------------------------- |
-| screenshot.png | A screen sample of the live demo of this project in the default (colorless) theme. |
+| `theme-switcher.gif` | An animated `.gif` that shows a quick demo of the running project. |
