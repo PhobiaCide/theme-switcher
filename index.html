@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&amp;display=swap" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="container">
     <h1 id="header">Theme Switcher</h1>
@@ -18,90 +20,77 @@
     <p>Select a theme from the choices below for a demo.</p>
     <hr />
     <table>
-      <tr>
-        <td>
-          <h2>Light</h2>
-          <table>
-            <tbody>
-              <tr>
-                <td>
-                  <button onclick="changeTheme('alien')">Xeno</button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button onclick="changeTheme('back-to-the-future')">
-                    McFly
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button onclick="changeTheme('star-wars-tatooine-jakku')">
-                    Light&nbsp;Side
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button onclick="changeTheme('the-fifth-element')">
-                    Multi-Pass
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button onclick="changeTheme('close-encounters')">
-                    Close&nbsp;Encounters
-                  </button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-        <td>
-          <h2>Dark</h2>
-          <table>
-            <tbody>
-              <tr>
-                <td>
-                  <button onclick="changeTheme('blade-runner')">
-                    Blade&nbsp;Runner
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button onclick="changeTheme('jurassic-park')">
-                    Dino&nbsp;DNA
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button onclick="changeTheme('star-wars')">
-                    Dark&nbsp;Side
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button onclick="changeTheme('the-matrix')">
-                    The&nbsp;One
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button onclick="changeTheme('dune')">Spice</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
+      <thead>
+        <tr>
+          <td>
+            <h2>Light</h2>
+          </td>
+          <td>
+            <h2>Dark</h2>
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <button onclick="changeTheme('alien')">Xeno</button>
+          </td>
+          <td>
+            <button onclick="changeTheme('blade-runner')">
+              Blade&nbsp;Runner
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button onclick="changeTheme('back-to-the-future')">
+              McFly
+            </button>
+          </td>
+          <td>
+            <button onclick="changeTheme('jurassic-park')">
+              Dino&nbsp;DNA
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button onclick="changeTheme('star-wars-tatooine-jakku')">
+              Light&nbsp;Side
+            </button>
+          </td>
+          <td>
+            <button onclick="changeTheme('star-wars')">
+              Dark&nbsp;Side
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button onclick="changeTheme('the-fifth-element')">
+              Multi-Pass
+            </button>
+          </td>
+          <td>
+            <button onclick="changeTheme('the-matrix')">
+              The&nbsp;One
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button onclick="changeTheme('close-encounters')">
+              Unexplained&nbsp;Lights
+            </button>
+          </td>
+          <td>
+            <button onclick="changeTheme('dune')">Spice</button>
+          </td>
+        </tr>
+      </tbody>
     </table>
   </div>
   <script src="script.js"></script>
 </body>
+
 </html>
