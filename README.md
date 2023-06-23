@@ -81,8 +81,6 @@ theme-switcher/
 
 #### index.html
 
-Integrates the theme switcher functionality into the HTML structure. When a theme button is clicked, it calls the `changeTheme` function with the corresponding theme name as the argument.
-
 Here's the code:
 
 ```html
@@ -195,6 +193,12 @@ Here's the code:
 </html>
 ```
 
+Integrates the theme switcher functionality into the HTML structure. When a theme button is clicked, it calls the `changeTheme` function with the corresponding theme name as the argument.
+
+<p align="right"><a href="#-theme-switcher">🔗back to top</a></p>
+
+---
+
 #### script.js
 
 Here's the code:
@@ -228,6 +232,10 @@ The `changeTheme` function is called when a theme button is clicked. It takes a 
 3. Updates the header text to display the selected theme name in title case.
 
 The `titleCase` function is a helper function used to convert the theme name from kebab-case to title case. It splits the string by hyphens, capitalizes the first letter of each word, and then joins them back together.
+
+<p align="right"><a href="#-theme-switcher">🔗back to top</a></p>
+
+---
 
 #### style.css
 
@@ -453,7 +461,7 @@ Contains the CSS styling for the theme switcher.
 
 The CSS file defines CSS variables to customize the theme colors. The default theme is defined under the `body` selector, and there are individual selectors for each theme, such as `.theme-dune`, `.theme-jurassic-park`, etc. You can define the theme colors and additional styles under the respective theme selectors.
 
-##### Make sure that all the files (`index.html`, `style.css` and `script.js`) are in the same directory for the webpage to work properly.
+Make sure that all the files (`index.html`, `style.css` and `script.js`) are in the same directory for the webpage to work properly.
 
 <p align="right"><a href="#-theme-switcher">🔗back to top</a></p>
 
@@ -461,7 +469,15 @@ The CSS file defines CSS variables to customize the theme colors. The default th
 
 ## Contributing 👥
 
-Contributions to the Theme Switcher project are welcome! To contribute, follow the steps below:
+Contributions to the Theme Switcher project are welcome!
+
+|There are two ways to contribute:|
+|---|
+|submit an issue detailing a bug or feature request|
+|**or**|
+|follow the steps below:|
+
+#### Contributing Directly
 
 1. **Fork** the **repository** by **clicking** the **"Fork"** button on the top-right corner of this page.
 
@@ -490,9 +506,7 @@ Contributions to the Theme Switcher project are welcome! To contribute, follow t
 
    ```bash
    git add .
-   git commit -m "Add your
-
- commit message here"
+   git commit -m "Add your commit message here"
    ```
 
    Replace "Add your commit message here" with a concise and descriptive commit message explaining your changes.
