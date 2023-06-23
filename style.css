@@ -1,22 +1,21 @@
-* 
-{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   overflow: hidden;
-  font: 500 calc((12px + 2.5vh) / 2) / 1.5 Ubuntu, sans-serif;
+  font: 500 calc((12px + 2.5vh + 12px) / 3) / 1.5 Ubuntu, sans-serif;
 }
+
 /* Default theme */
-body 
-{
+body {
   color: var(--color);
   background-color: var(--color-primary);
   --color-primary: #eee;
   --color-secondary: #555;
   --color-accent: #aaa;
 }
-.theme-dune 
-{
+
+.theme-dune {
   --color: #ddd;
   --bg-color: #666;
   --color-primary: #de8735;
@@ -25,8 +24,7 @@ body
   --color-accent: #b5a492;
 }
 
-.theme-jurassic-park 
-{
+.theme-jurassic-park {
   --color: #ddd;
   --bg-color: #666;
   --color-primary: #4b4921;
@@ -35,8 +33,7 @@ body
   --color-accent: #66d848;
 }
 
-.theme-back-to-the-future 
-{
+.theme-back-to-the-future {
   --color: #111;
   --bg-color: #eee;
   --color-primary: #e02411;
@@ -44,8 +41,8 @@ body
   --color-secondary: #ffa913;
   --color-accent: #569ced;
 }
-.theme-close-encounters
-{
+
+.theme-close-encounters {
   --color: #111;
   --bg-color: #eee;
   --hover-brightness: (1.12);
@@ -54,8 +51,8 @@ body
   --color-secondary: #efb7dc;
   --color-accent: #ff9969;
 }
-.theme-star-wars-tatooine-jakku 
-{
+
+.theme-star-wars-tatooine-jakku {
   --color: #111;
   --bg-color: #eee;
   --color-primary: #dba05c;
@@ -63,8 +60,8 @@ body
   --color-secondary: #e9cca4;
   --color-accent: #8eafd8;
 }
-.theme-alien 
-{
+
+.theme-alien {
   --color: #111;
   --bg-color: #eee;
   --color-primary: #d2ff06;
@@ -72,8 +69,8 @@ body
   --color-secondary: #15aa5c;
   --color-accent: #258073;
 }
-.theme-star-wars 
-{
+
+.theme-star-wars {
   --color: #ddd;
   --bg-color: #666;
   --color-primary: #27343a;
@@ -81,8 +78,8 @@ body
   --color-secondary: #9ea5a8;
   --color-accent: #ff6800;
 }
-.theme-blade-runner 
-{
+
+.theme-blade-runner {
   --color: #ddd;
   --bg-color: #666;
   --color-primary: #d88f00;
@@ -90,8 +87,8 @@ body
   --color-secondary: #efca93;
   --color-accent: #ff6cdc;
 }
-.theme-the-matrix 
-{
+
+.theme-the-matrix {
   --color: #ddd;
   --bg-color: #666;
   --color-primary: #031624;
@@ -99,8 +96,8 @@ body
   --color-secondary: #044b4a;
   --color-accent: #5fbe92;
 }
-.theme-the-fifth-element 
-{
+
+.theme-the-fifth-element {
   --color: #111;
   --bg-color: #eee;
   --color-primary: #f3f1ed;
@@ -108,22 +105,26 @@ body
   --color-secondary: #fffd6e;
   --color-accent: #ff6100;
 }
-a 
-{
+
+a {
   color: var(--color-secondary);
 }
-label 
-{
+
+p {
+  margin: 0px 10px 0px 10px
+}
+
+label {
   cursor: pointer;
 }
+
 html,
-body 
-{
+body {
   height: 100%;
   width: 100%;
 }
-.container 
-{
+
+.container {
   border-style: solid;
   border-color: var(--color-accent);
   border-width: 0 1vw;
@@ -131,17 +132,17 @@ body
   color: var(--color);
   background-color: var(--bg-color);
   width: 88vw;
-  margin-left: 6vw;
-  margin-right: 6vw;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
+
 h1,
-h2 
-{
+h2 {
   color: var(--font-color);
   padding: 1vh;
   text-align: center;
@@ -150,33 +151,29 @@ h2
     -1px 1px 0px black, -1px 0px 0px black, -1px -1px 0px black,
     0px -1px 0px black, 1px -1px 0px black, 4px 4px 4px var(--color-primary);
 }
-h2 
-{
+
+h2 {
   font-size: 4vh;
 }
-h1
-{
-  font-size: 5vh;
+
+h1 {
+  font-size: calc((5vh + 5vw + 32px) / 3);
   height: 15vh;
 }
-table 
-{
-  margin: auto;
+
+table {
+  margin: 5px;
   text-align: center;
-  padding: 0.6vw;
 }
-hr 
-{
-  margin-top: 1vh;
-  margin-bottom: 5vh;
-  background-image: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0) 0%,
-    var(--color-primary) 10%,
-    var(--color-accent) 50%,
-    var(--color-primary) 90%,
-    rgba(0, 0, 0, 0) 100%
-  );
+
+hr {
+  margin: 2vh;
+  background-image: linear-gradient(90deg,
+      rgba(0, 0, 0, 0) 0%,
+      var(--color-primary) 10%,
+      var(--color-accent) 50%,
+      var(--color-primary) 90%,
+      rgba(0, 0, 0, 0) 100%);
   width: 1vw;
   height: 1px;
   border: 2px outset var(--color-accent);
@@ -185,29 +182,30 @@ hr
   outline-width: 2px;
   outline-style: outset;
   outline-color: var(--color-secondary);
-  transform: scale(40, 1);
+  transform: scale(30, 1);
 }
-button
-{
+
+button {
   font-weight: 700;
   color: var(--font-color);
   margin: 2px;
+  margin-top: 5px;
   background-color: var(--color-secondary);
-  font-size: calc((2vw + 2vh) / 2);
+  font-size: calc((2vw + 2vh + 14px) / 3);
   max-width: 100%;
   text-shadow: 1px 1px 0 var(--color-accent);
   padding: 0.6vh 1.2vw;
-  border: 4px outset var(--color-secondary);
-  border-radius: 30px;
+  border: 2px outset var(--color-secondary);
+  border-radius: 7px;
   outline-style: solid;
   outline-width: 1px;
   outline-color: var(--color-secondary);
 }
-button:hover 
-{
+
+button:hover {
   transform: translateY(-1px);
-  outline-color: var(--color-accent);
+  border-width: 3px;
   outline-width: 1px;
-  animation-duration: 500ms;
+  animation-duration: 1000ms;
   transition: ease-in-out;
 }
