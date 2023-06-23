@@ -81,8 +81,6 @@ theme-switcher/
 
 #### index.html
 
-Here's the code:
-
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -201,8 +199,6 @@ Integrates the theme switcher functionality into the HTML structure. When a them
 
 #### script.js
 
-Here's the code:
-
 ```javascript
 function changeTheme(theme) {
   // remove all theme classes from body
@@ -238,8 +234,6 @@ The `titleCase` function is a helper function used to convert the theme name fro
 ---
 
 #### style.css
-
-Here's the code:
 
 ```css
 /* just some standard style resets */
