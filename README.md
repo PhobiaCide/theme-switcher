@@ -9,6 +9,26 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
+## Table Of Contents
+
+- [Features](#-features)
+  - Screenshot
+- Installation
+- Usage Example
+  - Live Demo
+- Development Prerequisites
+- Files
+  - File Structure
+  - Overview
+  - Details
+    - `index.html`
+    - `script.js`
+    - `style.css`
+- Contributing
+  - Contributing Directly
+- Meta
+  - Copyright
+    
 ## Features ✨
 
 - Seamlessly switch between multiple visual themes on a website.
@@ -54,7 +74,9 @@ To develop with the Theme Switcher, a basic understanding of HTML, CSS, and Java
 
 ---
 
-## File Structure 📁
+## Files
+
+### File Structure 📁
 
 ```bash
 theme-switcher/
@@ -69,7 +91,7 @@ theme-switcher/
 └── style.css
 ```
 
-### File Overview
+### Overview
 
 | File Name    | Description                               |
 |--------------|-------------------------------------------|
@@ -77,7 +99,7 @@ theme-switcher/
 | `style.css`  | The CSS file that defines the styling rules for the webpage. It includes styles for various elements, such as the container, headings, buttons, and table. It also defines different CSS variables for each theme, allowing dynamic theme switching. |
 | `script.js`  | The JavaScript file that contains the `changeTheme` function and the `titleCase` helper function. The `changeTheme` function is called when a theme button is clicked and updates the theme of the webpage by adding/removing CSS classes on the `body` element. The `titleCase` function converts a string to title case by capitalizing the first letter of each word. |
 
-### File Details
+### Details
 
 #### index.html
 
@@ -471,7 +493,7 @@ Contributions to the Theme Switcher project are welcome!
 |**or**|
 |follow the steps below:|
 
-#### Contributing Directly
+### Contributing Directly
 
 1. **Fork** the **repository** by **clicking** the **"Fork"** button on the top-right corner of this page.
 
@@ -536,6 +558,8 @@ Contributions to the Theme Switcher project are welcome!
 ---
 
 ## Meta 📝
+
+### Copyright
 
 &copy; 2023 [PhobiaCide][github-profile]
 
