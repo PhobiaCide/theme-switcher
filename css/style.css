@@ -40,11 +40,14 @@
 }
 
 .card {
-  margin-top: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1em;
   border: 0;
-  border-left: 7px solid var(--color-accent2);
-  border-radius: 3px 10px 5px 1px;
-  margin-bottom: 1rem;
+  border-left: 13px double var(--color-accent);
+  border-bottom: 7px ridge var(--color-accent);
+  border-top: 7px ridge var(--color-accent);
+  border-radius: 3em;
 }
 
 html {
@@ -53,8 +56,8 @@ html {
 
 html,
 body {
-  padding-top: 1vh;
-  padding-bottom: 1vh;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   min-width: 100vw;
 }
 
@@ -64,11 +67,10 @@ body {
   border-right-width: 1px;
   border-left-width: 2vw;
   border-radius: 3vw 10vw 5vw 1vw;
+
 }
 
 #content {
-  padding: 1rem;
-  padding-bottom: 5rem;
   border: 7px inset var(--color-secondary);
   border-right: 1px;
   border-left-width: 13px;
@@ -77,9 +79,16 @@ body {
 }
 
 #main {
-  margin-top: 1vw;
-  margin-bottom: 1vw;
+  width: 100%;
   background-image: var(--bg-gradient);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  border: 7px solid var(--color-accent2);
+  border-right-width: 1px;
+  border-left-width: 13px;
+  border-radius: 2em 4em 3em 1em;
 }
 
 #made-with::after {
