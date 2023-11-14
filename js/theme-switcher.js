@@ -67,7 +67,7 @@ document.getElementById('reset-demo').addEventListener("click", () => {
   //   Reset the theme to the default theme
   console.log("Resetting theme");
   document.getElementById("theme-name").innerHTML = "";
-  changeTheme("");
+  changeTheme("default");
 });
 
 document.addEventListener("DOMContentLoaded", function () {

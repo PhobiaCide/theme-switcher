@@ -1,15 +1,10 @@
 /* Default theme */
 body {
-  background-color: var(--color-accent) !important;
   --color-primary: #eee;
   --color-secondary: #555;
   --color-accent: #aaa;
+  --color-accent2: #555;
   --symbol: "💔";
-  outline-width: calc(2 * var(--distance));
-  outline-offset: -var(--distance);
-  outline-color: var(--color-secondary);
-  outline-style: solid;
-  margin: var(--distance)
 }
 
 body[data-theme-name="dune"] {

@@ -6,6 +6,8 @@
   line-height: 1.5;
   border-spacing: 0;
   border-collapse: collapse;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
   --distance: calc(1vw + 1vh) / 2;
   --half-distance: calc(var(--distance) / 2);
   --double-distance: calc(2 * var(--distance));
@@ -42,53 +44,52 @@
 .card {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  padding: 1em;
-  border: 0;
-  border-left: 13px double var(--color-accent);
-  border-bottom: 7px ridge var(--color-accent);
-  border-top: 7px ridge var(--color-accent);
-  border-radius: 3em;
+  padding: 1.5rem;
+  border: 3px inset var(--color-accent);
+  border-left: 13px outset var(--color-accent2);
+  border-right: 0px;
+  border-radius: 4rem 2rem 2rem 4rem;
 }
 
 html {
-  min-height: 100vh;
+  max-width: 100vw;
 }
 
 html,
 body {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  min-width: 100vw;
+  height: 100%;
+
 }
 
 body {
-  height: 100%;
-  border: 1vw solid var(--color-accent2);
-  border-right-width: 1px;
-  border-left-width: 2vw;
-  border-radius: 3vw 10vw 5vw 1vw;
-
+  background-image: var(--bg-gradient) !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  width: 100%;
 }
 
 #content {
+  /*
   border: 7px inset var(--color-secondary);
   border-right: 1px;
   border-left-width: 13px;
   border-left-style: solid;
-  border-radius: 3em 7em 5em 1em;
+  border-radius: 4em 2em 2em 4em;
+*/
 }
 
 #main {
+  margin: 0 auto;
+  background-color: #0f0f0f66;
+  backdrop-filter: blur(10px) saturate(110%) brightness(110%) contrast(110%) invert(10%);
   width: 100%;
-  background-image: var(--bg-gradient);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
   border: 7px solid var(--color-accent2);
   border-right-width: 1px;
   border-left-width: 13px;
-  border-radius: 2em 4em 3em 1em;
+  border-radius: 4em 2em 2em 4em;
+
 }
 
 #made-with::after {
