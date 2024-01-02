@@ -1,0 +1,51 @@
+html {
+  max-width: 100vw;
+}
+
+html,
+body {
+  height: 100%;
+
+}
+/*
+body {
+  background-image: var(--bg-gradient) !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  width: 100%;
+}
+
+summary {
+  cursor: pointer;
+  user-select: none;
+}
+
+#content {
+  margin: 0 auto;
+  border: 7px inset var(--color-secondary);
+  border-right: 1px;
+  border-left-width: 13px;
+  border-left-style: solid;
+  border-radius: 4em 2em 2em 4em;
+
+}
+
+#main {
+  margin: 0 auto;
+  background-color: #0f0f0f66;
+  backdrop-filter: blur(10px) saturate(110%) brightness(110%) contrast(110%) invert(10%);
+  width: 100%;
+  border: 7px solid var(--color-accent2);
+  border-right-width: 1px;
+  border-left-width: 13px;
+  border-radius: 4em 2em 2em 4em;
+
+}
+
+#made-with::after {
+  content: var(--symbol);
+  font-size: 1rem;
+  text-shadow: var(--text-shadow);
+}

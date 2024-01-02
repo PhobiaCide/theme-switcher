@@ -1,0 +1,89 @@
+/* Default theme */
+html {
+  --bs-primary: #eee;
+  --bs-secondary: #555;
+  --bs-primary-active-bg: #aaa;
+  --bs-primary-hover-bg: #555;
+  --symbol: "💔";
+  --bs-card-color: var(var(--bs-primary))
+}
+
+html[data-theme-name="dune"] {
+  --bs-primary: #de8735;
+  --bs-primary-active-bg: #a11225;
+  --bs-secondary: #f4c16e;
+  --bs-primary-hover-bg: #b5a492;
+  --symbol: "💙";
+}
+
+html[data-theme-name="jurassic-park"] {
+  --bs-primary: #4b4921;
+  --bs-primary-active-bg: #f01c1f;
+  --color-secondary: #2a8a56;
+  --color-accent: #66d848;
+  --symbol: "💚";
+}
+
+html[data-theme-name="back-to-the-future"] {
+  --bs-primary: #e02411;
+  --bs-primary-active-bg: #1e4ea0;
+  --color-secondary: #ffa913;
+  --color-accent: #569ced;
+  --symbol: "💙";
+}
+
+html[data-theme-name="close-encounters"] {
+  --bs-primary: #84caec;
+  --bs-primary-active-bg: #fcec86;
+  --color-secondary: #efb7dc;
+  --color-accent: #ff9969;
+  --symbol: "💛";
+}
+
+html[data-theme-name="star-wars-tatooine-jakku"] {
+  --bs-primary: #dba05c;
+  --bs-primary-active-bg: #9995bc;
+  --color-secondary: #e9cca4;
+  --color-accent: #8eafd8;
+  --symbol: "🤎";
+}
+
+html[data-theme-name="alien"] {
+  --bs-primary: #d2ff06;
+  --bs-primary-active-bg: #042a05;
+  --color-secondary: #15aa5c;
+  --color-accent: #258073;
+  --symbol: "🖤";
+}
+
+html[data-theme-name="star-wars-death-star"] {
+  --bs-primary: #27343a;
+  --bs-primary-active-bg: #f02;
+  --color-secondary: #9ea5a8;
+  --color-accent: #ff6800;
+  --symbol: "❤️";
+}
+
+html[data-theme-name="blade-runner"] {
+  --bs-primary: #d88f00;
+  --bs-primary-active-bg: #812a89;
+  --color-secondary: #efca93;
+  --color-accent: #ff6cdc;
+  --symbol: "💜";
+}
+
+html[data-theme-name="the-matrix"] {
+  --bs-primary: #031624;
+  --bs-primary-active-bg: #30ffa4;
+  --color-secondary: #044b4a;
+  --color-accent: #5fbe92;
+  --symbol: "💚";
+}
+
+html[data-theme-name="the-fifth-element"] {
+  --bs-primary: #f3f1ed;
+  --bs-primary-active-bg: #0b190c;
+  --color-secondary: #fffd6e;
+  --color-accent: #ff6100;
+  --symbol: "🖤";
+}
