@@ -36,7 +36,7 @@ const getSelectedTheme = () => {
  * Function to change the theme
  */
 const applySelectedTheme = (theme) => {
-  const attribute = "data-theme";
+  const attribute = "data-bs-theme";
   // Change the content of the header to match the selected theme
   //documentElement.removeAttribute(attribute);
   documentElement.setAttribute(attribute, theme);

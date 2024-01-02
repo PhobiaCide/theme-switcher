@@ -1,5 +1,5 @@
 /* Default theme */
-html {
+body {
   --color-primary: #eee;
   --color-secondary: #555;
   --color-accent: #aaa;
@@ -7,7 +7,7 @@ html {
   --symbol: "💔";
 }
 
-html[data-theme="9"] {
+body[data-bs-theme="9"] {
   --color-primary: #de8735;
   --color-accent2: #a11225;
   --color-secondary: #f4c16e;
@@ -15,7 +15,7 @@ html[data-theme="9"] {
   --symbol: "💙";
 }
 
-html[data-theme="6"] {
+body[data-bs-theme="6"] {
   --color-primary: #4b4921;
   --color-accent2: #f01c1f;
   --color-secondary: #2a8a56;
@@ -23,7 +23,7 @@ html[data-theme="6"] {
   --symbol: "💚";
 }
 
-html[data-theme="1"] {
+body[data-bs-theme="1"] {
   --color-primary: #e02411;
   --color-accent2: #1e4ea0;
   --color-secondary: #ffa913;
@@ -31,7 +31,7 @@ html[data-theme="1"] {
   --symbol: "💙";
 }
 
-html[data-theme="4"] {
+body[data-bs-theme="4"] {
   --color-primary: #84caec;
   --color-accent2: #fcec86;
   --color-secondary: #efb7dc;
@@ -39,7 +39,7 @@ html[data-theme="4"] {
   --symbol: "💛";
 }
 
-html[data-theme="2"] {
+body[data-bs-theme="2"] {
   --color-primary: #dba05c;
   --color-accent2: #9995bc;
   --color-secondary: #e9cca4;
@@ -47,7 +47,7 @@ html[data-theme="2"] {
   --symbol: "🤎";
 }
 
-html[data-theme="0"] {
+body[data-bs-theme="0"] {
   --color-primary: #d2ff06;
   --color-accent2: #042a05;
   --color-secondary: #15aa5c;
@@ -55,7 +55,7 @@ html[data-theme="0"] {
   --symbol: "🖤";
 }
 
-html[data-theme="7"] {
+body[data-theme-name="star-wars-death-star"] {
   --color-primary: #27343a;
   --color-accent2: #f02;
   --color-secondary: #9ea5a8;
@@ -63,7 +63,7 @@ html[data-theme="7"] {
   --symbol: "❤️";
 }
 
-html[data-theme="5"] {
+body[data-theme-name="blade-runner"] {
   --color-primary: #d88f00;
   --color-accent2: #812a89;
   --color-secondary: #efca93;
@@ -71,7 +71,7 @@ html[data-theme="5"] {
   --symbol: "💜";
 }
 
-html[data-theme="8"] {
+body[data-theme-name="the-matrix"] {
   --color-primary: #031624;
   --color-accent2: #30ffa4;
   --color-secondary: #044b4a;
@@ -79,7 +79,7 @@ html[data-theme="8"] {
   --symbol: "💚";
 }
 
-html[data-theme="3"] {
+body[data-theme-name="the-fifth-element"] {
   --color-primary: #f3f1ed;
   --color-accent2: #0b190c;
   --color-secondary: #fffd6e;
