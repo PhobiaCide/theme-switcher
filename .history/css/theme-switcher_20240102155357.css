@@ -1,0 +1,88 @@
+/* Default theme */
+body {
+  --color-primary: #eee;
+  --color-secondary: #555;
+  --color-accent: #aaa;
+  --color-accent2: #555;
+  --symbol: "💔";
+}
+
+body[data-bs--name="dune"] {
+  --color-primary: #de8735;
+  --color-accent2: #a11225;
+  --color-secondary: #f4c16e;
+  --color-accent: #b5a492;
+  --symbol: "💙";
+}
+
+body[data-theme-name="jurassic-park"] {
+  --color-primary: #4b4921;
+  --color-accent2: #f01c1f;
+  --color-secondary: #2a8a56;
+  --color-accent: #66d848;
+  --symbol: "💚";
+}
+
+body[data-theme-name="back-to-the-future"] {
+  --color-primary: #e02411;
+  --color-accent2: #1e4ea0;
+  --color-secondary: #ffa913;
+  --color-accent: #569ced;
+  --symbol: "💙";
+}
+
+body[data-theme-name="close-encounters"] {
+  --color-primary: #84caec;
+  --color-accent2: #fcec86;
+  --color-secondary: #efb7dc;
+  --color-accent: #ff9969;
+  --symbol: "💛";
+}
+
+body[data-theme-name="star-wars-tatooine-jakku"] {
+  --color-primary: #dba05c;
+  --color-accent2: #9995bc;
+  --color-secondary: #e9cca4;
+  --color-accent: #8eafd8;
+  --symbol: "🤎";
+}
+
+body[data-theme-name="alien"] {
+  --color-primary: #d2ff06;
+  --color-accent2: #042a05;
+  --color-secondary: #15aa5c;
+  --color-accent: #258073;
+  --symbol: "🖤";
+}
+
+body[data-theme-name="star-wars-death-star"] {
+  --color-primary: #27343a;
+  --color-accent2: #f02;
+  --color-secondary: #9ea5a8;
+  --color-accent: #ff6800;
+  --symbol: "❤️";
+}
+
+body[data-theme-name="blade-runner"] {
+  --color-primary: #d88f00;
+  --color-accent2: #812a89;
+  --color-secondary: #efca93;
+  --color-accent: #ff6cdc;
+  --symbol: "💜";
+}
+
+body[data-theme-name="the-matrix"] {
+  --color-primary: #031624;
+  --color-accent2: #30ffa4;
+  --color-secondary: #044b4a;
+  --color-accent: #5fbe92;
+  --symbol: "💚";
+}
+
+body[data-theme-name="the-fifth-element"] {
+  --color-primary: #f3f1ed;
+  --color-accent2: #0b190c;
+  --color-secondary: #fffd6e;
+  --color-accent: #ff6100;
+  --symbol: "🖤";
+}
