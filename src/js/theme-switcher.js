@@ -31,7 +31,7 @@ const applyTheme = (theme) => {
 const getThemeMode = () => {
   const mode = documentElement.getAttribute("data-theme"); // Define mode here
   const isDark = () => (mode >= 5);
-  console.log(isDark() ? "dark" : "light");
+
   return isDark() ? "dark" : "light";
 };
 
@@ -48,7 +48,6 @@ const donTopcoat = () => {
 
 // Initialization
 const applyMode = (mode) => {
-  console.log(`applying mode ${mode}`);
   const attribute = "data-bs-theme";
   document.documentElement.setAttribute(attribute, mode);
 };
@@ -72,7 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Event listener for theme selection
   document.getElementsByName("theme").forEach((element) => {
     element.addEventListener("click", () => {
-      console.log("A theme was selected.");
       applyTheme(getSelectedTheme());
       applyMode(getThemeMode());
     });
