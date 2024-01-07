@@ -17,67 +17,64 @@
       content="ie=edge"
     />
     <title>Sci-Fi Theme Switcher</title>
+    <!--
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&amp;display=swap"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="./src/css/normalize.css"
     />
-
     <link
       rel="stylesheet"
       href="./src/css/effeckt.css"
     />
-    <!-- Halfmoon CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/halfmoon@2.0.1/css/halfmoon.min.css"
       rel="stylesheet"
-      integrity="sha256-SsJizWSIG9JT9Qxbiy8xnYJfjCAkhEQ0hihxRn7jt2M="
-      crossorigin="anonymous"
-    >
-
-    <!-- Halfmoon modern core theme -->
+      type="text/css"
+      href="./src/css/halfmoon/cores.css"
+    />
     <link
-      href="https://cdn.jsdelivr.net/npm/halfmoon@2.0.1/css/cores/halfmoon.modern.css"
       rel="stylesheet"
-      integrity="sha256-DD6elX+jPmbFYPsGvzodUv2+9FHkxHlVtQi0/RJVULs="
-      crossorigin="anonymous"
-    >
-
+      type="text/css"
+      href="./src/css/halfmoon/halfmoon.css"
+    />
     <link
       rel="stylesheet"
       type="text/css"
       href="./src/css/theme-switcher.css"
     />
-    <!--
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./src/css/custom/media-queries.css"
+    />
+    
     <link
       rel="stylesheet"
       type="text/css"
       href="./src/css/custom/style.css"
     />
-    -->
     <link
       id="topcoat-stylesheet"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/topcoat/0.8.0/css/topcoat-desktop-dark.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="./src/css/topcoat/desktop/dark.css"
     />
   </head>
 
   <body class="container-fluid bg-body bg-gradient w-100 h-100 subpixel-antialiased text-body p-0">
     <div
       id="header"
-      class="container ms-auto sticky-top bg-primary bg-gradient rounded-pill rounded-top-0 rounded-end-0 align-self-end w-75 text-end m-0 text-end justify-content-end shadow border-bottom p-1 pe-0 pt-0 w-75"
+      class="container ms-auto sticky-top bg-primary bg-gradient rounded-pill rounded-top-0 rounded-end-0 align-self-end w-75 text-end m-0 text-end justify-content-end shadow border-bottom border-end-0 border-top-0 p-1 pe-0 pt-0 pb-0 w-75"
     >
-      <header class="card w-100 text-start rounded-pill rounded-top-0 rounded-end-0 p-1 pt-0 pe-0">
-          <h1 class="align-bottom display-1 m-0 ms-5 p-0 text-body">Theme Selector
+      <header class="card w-100 text-end rounded-pill rounded-top-0 rounded-end-0 p-1 pt-0 ps-0 pe-0">
+        <nav
+          class=" nav nav-justified navbar topcoat-navigation-bar bg-body bg-gradient rounded-pill rounded-top-0 rounded-end-0 m-0 p-0"
+        >
+          <h1 class="align-bottom display-1 topcoat-navigation-bar__title m-0 ms-5 p-0">Theme Switcher
           </h1>
+        </nav>
       </header>
     </div>
     <div
@@ -85,18 +82,17 @@
       class="text-center w-lg-75 m-auto m-0 p-0"
     >
       <article class="card bg-primary border-5 rounded-5 p-1 mx-1 my-5 shadow">
-        <header class="card-header rounded-top rounded-bottom-0 p-0">
-          <h2 class="text-center card-title rounded-pill p-1">
-            Welcome to the Sci-Fi Theme Selector!
+        <section class="card-header rounded-top rounded-bottom-0 p-0 mt-5">
+          <h2 class="text-center card-title rounded-pill display-6 p-3">
+            Welcome to the Sci-Fi Theme Switcher!
           </h2>
-          </header>
-          <section class="card-body bg-body rounded-bottom-5">
+          <section class="card-body bg-body-secondary rounded-bottom-5">
 
             <header>
               <h2 class="text-center">About</h2>
             </header>
 
-            <span
+            <section
               id="info"
               class="container-fluid text-center rounded rounded-bottom-5 w-100 my-5"
             >
@@ -135,11 +131,12 @@
                   to demonstrate the project.
                 </p>
               </details>
-            </span>
+            </section>
           </section>
+        </section>
       </article>
       <article class="text-center w-100 mt-5 bg-transparent my-5">
-        <main class="card bg-gradient border-5 rounded-5 p-1 mx-1 my-5 shadow">
+        <main class="card bg-primary border-5 rounded-5 p-1 mx-1 my-5 shadow">
           <section
             id="switcher"
             class="container-fluid text-center w-100"
@@ -154,45 +151,49 @@
                 <fieldset
                   id="default-switch"
                   form="theme-select"
-                  class="card d-inline-block text-center w-sm-75 w-md-50 w-lg-25 pb-3 border"
+                  class="card d-inline-block text-end"
                 >
-                  <legend class="card-header bg-body">
+                  <legend class="card-header">
                     <header>
-                      <h2 class="card-title text-center">Reset</h2>
+                      <h2 class="card-title text-center">Current theme</h2>
                     </header>
                   </legend>
-                  <h3 class="card-title text-center">
-                    Reset to default</h3>
-                  <label
-                    for="reset"
-                    class="topcoat-switch text-start"
-                  >
-                    <input
-                      name="theme"
-                      type="radio"
-                      id="reset"
-                      class="topcoat-switch__input"
-                      data-bs-toggle="tooltip"
-                      data-bs-title="Reset to default theme"
-                      value="default"
-                      checked
-                    />
-                    <div class="topcoat-switch__toggle"></div>
-                  </label>
-
+                  <p
+                    id="theme-name"
+                    class="text-center"
+                  >Default</p>
+                  <span class="d-inline-block bg-gradient bg-opacity-10 p-5 w-100 rounded">
+                    Reset to default&nbsp;
+                    <label
+                      for="reset"
+                      class="topcoat-switch text-start"
+                    >
+                      <input
+                        name="theme"
+                        type="radio"
+                        id="reset"
+                        class="topcoat-switch__input"
+                        data-bs-toggle="tooltip"
+                        data-bs-title="Reset to default theme"
+                        value="default"
+                        checked
+                      />
+                      <div class="topcoat-switch__toggle"></div>
+                    </label>
+                  </span>
                 </fieldset>
                 <div>
                   <fieldset
                     id="light-themes"
                     form="theme-select"
-                    class="card d-inline-block text-center w-sm-75 w-md-50 w-lg-25"
+                    class="card d-inline-block text-end"
                   >
-                    <legend class="card-header bg-body">
+                    <legend class="">
                       <header>
-                        <h3 class="card-title text-center">Light</h3>
+                        <h3 class="text-center">Light</h3>
                       </header>
                     </legend>
-      
+                    <span class="d-inline-block bg-gradient bg-opacity-10 p-5 w-100 rounded">
                       <h4 class="d-inline justify-content-center">
                         Alien
                       </h4>
@@ -210,7 +211,7 @@
                         <div class="topcoat-switch__toggle"></div>
                       </label>
                       <br />
-                      <h4 class="d-inline justify-content-center">Back To The Future</h4>
+                      Back To The Future
                       <label
                         for="theme-1"
                         class="topcoat-switch text-start m-3"
@@ -225,8 +226,7 @@
                         <div class="topcoat-switch__toggle"></div>
                       </label>
                       <br />
-                      <h4 class="d-inline justify-content-center">Star Wars: Tatooine</h4>
-                      <label
+                      Star Wars: Tatooine<label
                         for="theme-2"
                         class="topcoat-switch text-start m-3"
                       >
@@ -240,7 +240,7 @@
                         <div class="topcoat-switch__toggle"></div>
                       </label>
                       <br />
-                      <h4 class="d-inline justify-content-center">The 5th Element</h4>
+                      The 5th Element
                       <label
                         for="theme-3"
                         class="topcoat-switch text-start m-3"
@@ -255,8 +255,7 @@
                         <div class="topcoat-switch__toggle"></div>
                       </label>
                       <br />
-                      <h4 class="d-inline justify-content-center">
-                        Close Encounters</h4>
+                      Close Encounters
                       <label
                         for="theme-4"
                         class="topcoat-switch text-start m-3"
@@ -276,14 +275,13 @@
                   <fieldset
                     id="dark-themes"
                     form="theme-select"
-                    class="card d-inline-block text-center w-sm-75 w-md-50 w-lg-25"
+                    class="card d-inline-block text-end"
                   >
-                    <legend class="card-header bg-body">
-                      <h2 class="card-title text-center">Dark</h2>
+                    <legend>
+                      <h2 class="text-center">Dark</h2>
                     </legend>
-                    <span class="d-inline-block bg-opacity-10 p-5 w-100 rounded">
-                      <h4 class="d-inline justify-content-center">
-                        Blade&nbsp;Runner</h4>
+                    <span class="d-inline-block bg-gradient bg-opacity-10 p-5 w-100 rounded">
+                      Blade&nbsp;Runner
                       <label
                         for="theme-5"
                         class="topcoat-switch text-start my-3"
@@ -298,8 +296,7 @@
                         <div class="topcoat-switch__toggle"></div>
                       </label>
                       <br />
-                      <h4 class="d-inline justify-content-center">
-                        Jurassic&nbsp;Park</h4>
+                      Jurassic&nbsp;Park
                       <label
                         for="theme-6"
                         class="topcoat-switch text-start my-3"
@@ -314,8 +311,7 @@
                         <div class="topcoat-switch__toggle"></div>
                       </label>
                       <br />
-                      <h4 class="d-inline justify-content-center">
-                      Star&nbsp;Wars: Death&nbsp;Star</h4>
+                      Star&nbsp;Wars: Death&nbsp;Star
                       <label
                         for="theme-7"
                         class="topcoat-switch text-start my-3"
@@ -330,8 +326,7 @@
                         <div class="topcoat-switch__toggle"></div>
                       </label>
                       <br />
-                      <h4 class="d-inline justify-content-center">
-                      The&nbsp;Matrix</h4>
+                      The&nbsp;Matrix
                       <label
                         for="theme-8"
                         class="topcoat-switch text-start my-3"
@@ -346,8 +341,7 @@
                         <div class="topcoat-switch__toggle"></div>
                       </label>
                       <br />
-                      <h4 class="d-inline justify-content-center">
-                      Dune</h4>
+                      Dune
                       <label
                         for="theme-9"
                         class="topcoat-switch text-start my-3"
@@ -394,7 +388,7 @@
 
     <div id="scripts">
       <script src="./src/js/theme-switcher.js"></script>
-
+      <script src="./src/js/don-topcoat.js"></script>
       <script
         src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
         integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="

@@ -1,1 +1,5 @@
-theme-switcher.code-workspace
+/theme-switcher.code-workspace
+/.history
+/.vscode
+/src/html
+/src/css/halfmoon/cores
