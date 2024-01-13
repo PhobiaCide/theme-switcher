@@ -35,16 +35,7 @@ const getThemeMode = () => {
   return isDark() ? "dark" : "light";
 };
 
-// Topcoat Functions
-const isDesktop = () => window.innerWidth >= widthBreakpoint;
-const constructTopcoatHref = () => `https://cdnjs.cloudflare.com/ajax/libs/topcoat/0.8.0/css/topcoat-${isDesktop() ? 'desktop' : 'mobile'}-${getThemeMode()}.min.css`;
 
-const donTopcoat = () => {
-  const href = constructTopcoatHref();
-  const topcoat = document.getElementById("topcoat-stylesheet");
-  topcoat.setAttribute("href", href);
-  applyMode(getThemeMode());
-};
 
 // Initialization
 const applyMode = (mode) => {
@@ -62,11 +53,6 @@ document.addEventListener("DOMContentLoaded", () => {
     applyMode(getUserPreferences());
   }
 
-  donTopcoat(); // Load theme on page load
-
-  window.addEventListener("resize", () => {
-    donTopcoat();
-  });
 
   // Event listener for theme selection
   document.getElementsByName("theme").forEach((element) => {
@@ -76,4 +62,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-

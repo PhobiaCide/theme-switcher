@@ -5,6 +5,7 @@
   data-bs-theme="dark"
   data-theme="default"
 >
+
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -16,16 +17,20 @@
       content="ie=edge"
     />
     <title>Sci-Fi Theme Switcher</title>
-  
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&amp;display=swap"
     />
-
+    <!-- Normalize CSS -->
     <link
       rel="stylesheet"
-      href="./src/css/normalize.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+
     <link
       rel="stylesheet"
       href="./src/css/custom/media-queries.css"
@@ -77,11 +82,11 @@
   <body class="container-fluid bg-body bg-gradient w-100 h-100 subpixel-antialiased text-body p-0">
     <div
       id="header"
-      class="container ms-auto sticky-top bg-primary bg-gradient rounded-pill rounded-top-0 rounded-end-0 align-self-end w-75 text-end m-0 text-end justify-content-end shadow border-bottom border-end-0 border-top-0 p-1 pe-0 pt-0 pb-0 w-75"
+      class="container ms-auto fixed-top bg-primary bg-gradient rounded-pill rounded-top-0 rounded-end-0 align-self-end w-75 text-end m-0 text-end justify-content-end shadow border-bottom border-end-0 border-top-0 p-1 pe-0 pt-0 pb-0 w-75"
     >
-      <header class="card w-100 text-end rounded-pill rounded-top-0 rounded-end-0 p-1 pt-0 ps-0 pe-0">
+      <header class="card bg-transparent w-100 text-end rounded-pill rounded-top-0 rounded-end-0 p-1 pt-0 ps-0 pe-0">
         <nav
-          class=" nav nav-justified navbar topcoat-navigation-bar bg-body bg-gradient rounded-pill rounded-top-0 rounded-end-0 m-0 p-0"
+          class=" nav nav-justified navbar topcoat-navigation-bar bg-body rounded-pill rounded-top-0 rounded-end-0 m-0 p-0"
         >
           <h1 class="align-bottom display-1 topcoat-navigation-bar__title m-0 ms-5 p-0">Theme Switcher
           </h1>
@@ -90,69 +95,66 @@
     </div>
     <div
       id="content"
-      class="text-center w-lg-75 m-auto m-0 p-0"
+      class="text-center w-lg-75 m-auto mt-5 pt-5"
     >
-      <article class="card bg-primary border-5 rounded-5 p-1 mx-1 my-5 shadow">
-        <section class="card-header rounded-top rounded-bottom-0 p-0 mt-5">
-          <h2 class="text-center card-title rounded-pill display-6 p-3">
+      <article class="card bg-transparent border-5 rounded-5 p-1 mx-1 my-5 shadow">
+        <header class="card-header rounded-top-5 rounded-bottom-0 p-0">
+          <h2 class="text-center card-title display-6 p-3">
             Welcome to the Sci-Fi Theme Switcher!
           </h2>
-          <section class="card-body bg-body-secondary rounded-bottom-5">
-
-            <header>
-              <h2 class="text-center">About</h2>
-            </header>
-
-            <section
-              id="info"
-              class="container-fluid text-center rounded rounded-bottom-5 w-100 my-5"
-            >
-              <details class="align-middle p-3">
-                <summary>
-                  <h3 class="d-inline">What is it?</h3>
-                </summary>
-                <span class="p-5 w-100 d-block text-start">
-                  <p class="">
-                    This is a simple web development project that uses CSS custom properties (variables) to change the
-                    theme
-                    of the page. The theme is changed by clicking on one of the switches below. There are three
-                    sections:
-                  </p>
-                  <ul>
-                    <li>
-                      light themes
-                    </li>
-                    <li>
-                      default theme
-                    </li>
-                    <li>
-                      dark themes
-                    </li>
-                  </ul>
-                </span>
-              </details>
-
-              <details class="align-middle p-3">
-                <summary class="">
-                  <h3 class="d-inline">How?
-                  </h3>
-                </summary>
-                <p class="p-3">
-                  Select a theme from the choices below
-                  to demonstrate the project.
+        </header>
+        <section class="card-body bg-body-secondary rounded-bottom-5">
+          <header>
+            <h2 class="text-center">About</h2>
+          </header>
+          <section
+            id="info"
+            class="container-fluid text-center rounded-bottom-5 w-100 my-5"
+          >
+            <details class="align-middle p-3">
+              <summary>
+                <h3 class="d-inline bg-body-tertiary">What is it?</h3>
+              </summary>
+              <span class="p-5 w-100 d-block text-start">
+                <p class="">
+                  This is a simple web development project that uses CSS custom properties (variables) to change the
+                  theme
+                  of the page. The theme is changed by clicking on one of the switches below. There are three
+                  sections:
                 </p>
-              </details>
-            </section>
+                <ul>
+                  <li>
+                    light themes
+                  </li>
+                  <li>
+                    default theme
+                  </li>
+                  <li>
+                    dark themes
+                  </li>
+                </ul>
+              </span>
+            </details>
+            <details class="align-middle p-3">
+              <summary class="">
+                <h3 class="d-inline">How?</h3>
+              </summary>
+              <p class="p-3">
+                Select a theme from the choices below
+                to demonstrate the project.
+              </p>
+            </details>
           </section>
         </section>
+
       </article>
       <article class="text-center w-100 mt-5 bg-transparent my-5">
-        <main class="card bg-primary border-5 rounded-5 p-1 mx-1 my-5 shadow">
+        <main class="card bg-transparent border-5 rounded-5 p-1 mx-1 my-5 shadow">
           <section
             id="switcher"
-            class="container-fluid text-center w-100"
+            class="container-fluid text-center"
           >
-            <fieldset class="container-fluid">
+            <form class="container-fluid">
               <legend class="">
                 <header>
                   <h1 class="text-center">Theme Switcher</h1>
@@ -161,7 +163,7 @@
               <fieldset
                 id="default-switch"
                 form="theme-select"
-                class="card d-inline-block text-end"
+                class="card bg-body-secondary d-inline-block text-end"
               >
                 <legend class="card-header">
                   <header>
@@ -172,7 +174,7 @@
                   id="theme-name"
                   class="text-center"
                 >Default</p>
-                <span class="d-inline-block bg-gradient bg-opacity-10 p-5 w-100 rounded">
+                <span class="d-inline-block bg-opacity-10 p-5 w-100 rounded">
                   Reset to default&nbsp;
                   <label
                     for="reset"
@@ -192,188 +194,188 @@
                   </label>
                 </span>
               </fieldset>
-              <div>
-                <fieldset
-                  id="light-themes"
-                  form="theme-select"
-                  class="card d-inline-block text-end"
-                >
-                  <legend class="">
-                    <header>
-                      <h3 class="text-center">Light</h3>
-                    </header>
-                  </legend>
-                  <section class="d-inline-block bg-gradient bg-opacity-10 p-5 w-100 rounded">
-                    <h4 class="d-inline justify-content-center">
-                      Alien
-                    </h4>
-                    <label
-                      for="theme0"
-                      class="topcoat-switch text-start"
-                    >
-                      <input
-                        name="theme"
-                        id="theme0"
-                        type="radio"
-                        class="topcoat-switch__input"
-                        value="0"
-                      />
-                      <div class="topcoat-switch__toggle"></div>
-                    </label>
-                    <br />
-                    <h4 class="d-inline justify-content-center">
-                      Back To The Future</h4>
-                    <label
-                      for="theme-1"
-                      class="topcoat-switch text-start m-3"
-                    >
-                      <input
-                        id="theme-1"
-                        name="theme"
-                        type="radio"
-                        class="topcoat-switch__input"
-                        value="1"
-                      />
-                      <div class="topcoat-switch__toggle"></div>
-                    </label>
-                    <br />
-                    <h4 class="d-inline justify-content-center">
-                      Star Wars: Tatooine</h4>
-                    <label
-                      for="theme-2"
-                      class="topcoat-switch text-start m-3"
-                    >
-                      <input
-                        id="theme-2"
-                        name="theme"
-                        type="radio"
-                        class="topcoat-switch__input"
-                        value="2"
-                      />
-                      <div class="topcoat-switch__toggle"></div>
-                    </label>
-                    <br />
-                    <h4 class="d-inline justify-content-center">
-                      The 5th Element</h4>
-                    <label
-                      for="theme-3"
-                      class="topcoat-switch text-start m-3"
-                    >
-                      <input
-                        id="theme-3"
-                        name="theme"
-                        type="radio"
-                        class="topcoat-switch__input"
-                        value="3"
-                      />
-                      <div class="topcoat-switch__toggle"></div>
-                    </label>
-                    <br />
-                    <h4 class="d-inline justify-content-center">
-                      Close Encounters</h4>
-                    <label
-                      for="theme-4"
-                      class="topcoat-switch text-start m-3"
-                    >
-                      <input
-                        id="theme-4"
-                        name="theme"
-                        type="radio"
-                        class="topcoat-switch__input"
-                        value="4"
-                      />
-                      <div class="topcoat-switch__toggle"></div>
-                    </label>
-                    <br />
-                  </section>
-                  <fieldset
-                    id="dark-themes"
-                    form="theme-select"
-                    class="card d-inline-block text-end"
+              <fieldset
+                id="light-themes"
+                form="theme-select"
+                class="card bg-body-secondary d-inline-block text-end"
+              >
+                <legend class="">
+                  <header>
+                    <h3 class="text-center">Light</h3>
+                  </header>
+                </legend>
+                <section class="d-inline-block bg-opacity-10 p-5 w-100 rounded">
+                  <h4 class="d-inline justify-content-center">
+                    Alien
+                  </h4>
+                  <label
+                    for="theme0"
+                    class="topcoat-switch text-start"
                   >
-                    <legend>
-                      <h2 class="text-center">Dark</h2>
-                    </legend>
-                    <span class="d-inline-block bg-gradient bg-opacity-10 p-5 w-100 rounded">
-                      Blade&nbsp;Runner
-                      <label
-                        for="theme-5"
-                        class="topcoat-switch text-start my-3"
-                      >
-                        <input
-                          id="theme-5"
-                          name="theme"
-                          type="radio"
-                          class="topcoat-switch__input"
-                          value="5"
-                        />
-                        <div class="topcoat-switch__toggle"></div>
-                      </label>
-                      <br />
-                      Jurassic&nbsp;Park
-                      <label
-                        for="theme-6"
-                        class="topcoat-switch text-start my-3"
-                      >
-                        <input
-                          id="theme-6"
-                          name="theme"
-                          type="radio"
-                          class="topcoat-switch__input"
-                          value="6"
-                        />
-                        <div class="topcoat-switch__toggle"></div>
-                      </label>
-                      <br />
-                      Star&nbsp;Wars: Death&nbsp;Star
-                      <label
-                        for="theme-7"
-                        class="topcoat-switch text-start my-3"
-                      >
-                        <input
-                          id="theme-7"
-                          name="theme"
-                          type="radio"
-                          class="topcoat-switch__input"
-                          value="7"
-                        />
-                        <div class="topcoat-switch__toggle"></div>
-                      </label>
-                      <br />
-                      The&nbsp;Matrix
-                      <label
-                        for="theme-8"
-                        class="topcoat-switch text-start my-3"
-                      >
-                        <input
-                          id="theme-8"
-                          name="theme"
-                          type="radio"
-                          class="topcoat-switch__input"
-                          value="8"
-                        />
-                        <div class="topcoat-switch__toggle"></div>
-                      </label>
-                      <br />
-                      Dune
-                      <label
-                        for="theme-9"
-                        class="topcoat-switch text-start my-3"
-                      >
-                        <input
-                          id="theme-9"
-                          name="theme"
-                          type="radio"
-                          class="topcoat-switch__input"
-                          value="9"
-                        />
-                        <div class="topcoat-switch__toggle"></div>
-                      </label>
-                      <br />
-                    </span>
-                  </fieldset>
-              </div>
-            </fieldset>
+                    <input
+                      name="theme"
+                      id="theme0"
+                      type="radio"
+                      class="topcoat-switch__input"
+                      value="0"
+                    />
+                    <div class="topcoat-switch__toggle"></div>
+                  </label>
+                  <br />
+                  <h4 class="d-inline justify-content-center">
+                    Back To The Future</h4>
+                  <label
+                    for="theme-1"
+                    class="topcoat-switch text-start m-3"
+                  >
+                    <input
+                      id="theme-1"
+                      name="theme"
+                      type="radio"
+                      class="topcoat-switch__input"
+                      value="1"
+                    />
+                    <div class="topcoat-switch__toggle"></div>
+                  </label>
+                  <br />
+                  <h4 class="d-inline justify-content-center">
+                    Star Wars: Tatooine</h4>
+                  <label
+                    for="theme-2"
+                    class="topcoat-switch text-start m-3"
+                  >
+                    <input
+                      id="theme-2"
+                      name="theme"
+                      type="radio"
+                      class="topcoat-switch__input"
+                      value="2"
+                    />
+                    <div class="topcoat-switch__toggle"></div>
+                  </label>
+                  <br />
+                  <h4 class="d-inline justify-content-center">
+                    The 5th Element</h4>
+                  <label
+                    for="theme-3"
+                    class="topcoat-switch text-start m-3"
+                  >
+                    <input
+                      id="theme-3"
+                      name="theme"
+                      type="radio"
+                      class="topcoat-switch__input"
+                      value="3"
+                    />
+                    <div class="topcoat-switch__toggle"></div>
+                  </label>
+                  <br />
+                  <h4 class="d-inline justify-content-center">
+                    Close Encounters</h4>
+                  <label
+                    for="theme-4"
+                    class="topcoat-switch text-start m-3"
+                  >
+                    <input
+                      id="theme-4"
+                      name="theme"
+                      type="radio"
+                      class="topcoat-switch__input"
+                      value="4"
+                    />
+                    <div class="topcoat-switch__toggle"></div>
+                  </label>
+                  <br />
+                </section>
+              </fieldset>
+              <fieldset
+                id="dark-themes"
+                form="theme-select"
+                class="card bg-body-secondary d-inline-block text-end"
+              >
+                <legend>
+                  <h2 class="text-center">Dark</h2>
+                </legend>
+                <span class="d-inline-block bg-opacity-10 p-5 w-100 rounded">
+                  Blade&nbsp;Runner
+                  <label
+                    for="theme-5"
+                    class="topcoat-switch text-start my-3"
+                  >
+                    <input
+                      id="theme-5"
+                      name="theme"
+                      type="radio"
+                      class="topcoat-switch__input"
+                      value="5"
+                    />
+                    <div class="topcoat-switch__toggle"></div>
+                  </label>
+                  <br />
+                  Jurassic&nbsp;Park
+                  <label
+                    for="theme-6"
+                    class="topcoat-switch text-start my-3"
+                  >
+                    <input
+                      id="theme-6"
+                      name="theme"
+                      type="radio"
+                      class="topcoat-switch__input"
+                      value="6"
+                    />
+                    <div class="topcoat-switch__toggle"></div>
+                  </label>
+                  <br />
+                  Star&nbsp;Wars: Death&nbsp;Star
+                  <label
+                    for="theme-7"
+                    class="topcoat-switch text-start my-3"
+                  >
+                    <input
+                      id="theme-7"
+                      name="theme"
+                      type="radio"
+                      class="topcoat-switch__input"
+                      value="7"
+                    />
+                    <div class="topcoat-switch__toggle"></div>
+                  </label>
+                  <br />
+                  The&nbsp;Matrix
+                  <label
+                    for="theme-8"
+                    class="topcoat-switch text-start my-3"
+                  >
+                    <input
+                      id="theme-8"
+                      name="theme"
+                      type="radio"
+                      class="topcoat-switch__input"
+                      value="8"
+                    />
+                    <div class="topcoat-switch__toggle"></div>
+                  </label>
+                  <br />
+                  Dune
+                  <label
+                    for="theme-9"
+                    class="topcoat-switch text-start my-3"
+                  >
+                    <input
+                      id="theme-9"
+                      name="theme"
+                      type="radio"
+                      class="topcoat-switch__input"
+                      value="9"
+                    />
+                    <div class="topcoat-switch__toggle"></div>
+                  </label>
+                  <br />
+                </span>
+              </fieldset>
+
+            </form>
           </section>
           <footer>
             <span class="">&nbsp;</span>
@@ -401,6 +403,7 @@
 
     <div id="scripts">
       <script src="./src/js/theme-switcher.js"></script>
+      <script src="./src/js/topcoat-loader.js"></script>
       <script
         src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
         integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
