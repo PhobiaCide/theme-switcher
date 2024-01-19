@@ -5,7 +5,6 @@
   data-bs-theme="dark"
   data-theme="default"
 >
-
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -17,7 +16,7 @@
       content="ie=edge"
     />
     <title>Sci-Fi Theme Switcher</title>
-
+    <link rel="manifest" href="manifest.json" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&amp;display=swap"
@@ -35,7 +34,6 @@
       rel="stylesheet"
       href="./src/css/custom/media-queries.css"
     />
-
     <!-- Halfmoon CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/halfmoon@2.0.1/css/halfmoon.min.css"
@@ -66,15 +64,9 @@
       type="text/css"
       href="./src/css/custom/media-queries.css"
     />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./src/css/custom/style.css"
-    />
-
     <style>
       body {
-        font-family: source-sans-pro, sans-serif;
+        font-family: var(--source-sans-pro), sans-serif;
       }
     </style>
   </head>
