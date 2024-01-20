@@ -28,8 +28,8 @@ const applyTheme = (theme) => {
 };
 
 // Theme Mode Functions
-const getUserThemeMode = () => {
-  const mode = documentElement.getAttribute("data-theme"); // Define mode here
+const getThemeMode = () => {
+  const mode = documentElement.getAttribute("data-theme");
   const isDark = () => (mode >= 5);
 
   return isDark() ? "dark" : "light";
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementsByName("theme").forEach((element) => {
     element.addEventListener("click", () => {
       applyTheme(getSelectedTheme());
-      applyMode(getUserThemeMode());
+      applyMode(getThemeMode());
     });
   });
 });

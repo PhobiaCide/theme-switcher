@@ -102,20 +102,23 @@ html[data-theme="9"] {
 
 * {
   --gradient: radial-gradient(ellipse farthest-corner at right bottom,
-  var(--color-accent) 0%,
+  var(--color-accent2) 2%,
   var(--color-primary) 8%,
-  var(--color-accent) 30%,
-  var(--color-primary) 40%,
+  var(--color-primary) 12%,
+  var(--color-accent) 18%,
+  var(--color-secondary) 33%,
   transparent 80%),
 radial-gradient(ellipse farthest-corner at left top,
-  var(--color-secondary) 0%,
-  var(--color-accent2) 8%,
-  var(--color-secondary) 25%,
-  var(--color-accent2) 62.5%);
+  var(--color-accent2) 2%,
+  var(--color-primary) 8%,
+  var(--color-primary) 12%,
+  var(--color-accent) 18%,
+  var(--color-secondary) 33%,
+  transparent 80%);
 }
 
 .bg-primary {
-  background-color: var(--color-primary) !important;
+  background-color: var(--color-accent) !important;
 }
 
 .card {
