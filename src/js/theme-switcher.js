@@ -8,13 +8,14 @@ const getSavedTheme = () => localStorage.getItem("theme");
 
 // Theme-related Functions
 const getThemeElements = () => document.getElementsByName("theme");
+const themeElements = getThemeElements();
 const getSelectedTheme = () => {
-  const themeElements = getThemeElements();
+
   let selectedValue;
 
-  for (const element of themeElements) {
-    if (element.checked) {
-      selectedValue = element.value;
+  for (const themeElement of themeElements) {
+    if (themeElement.checked) {
+      selectedValue = themeElement.value;
       break;
     }
   }

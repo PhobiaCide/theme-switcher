@@ -5,6 +5,7 @@
   data-bs-theme="dark"
   data-theme="default"
 >
+
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -16,7 +17,10 @@
       content="ie=edge"
     />
     <title>Sci-Fi Theme Switcher</title>
-    <link rel="manifest" href="manifest.json" />
+    <link
+      rel="manifest"
+      href="manifest.json"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&amp;display=swap"
@@ -28,11 +32,6 @@
       integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
-
-    <link
-      rel="stylesheet"
-      href="./src/css/custom/media-queries.css"
     />
     <!-- Halfmoon CSS -->
     <link
@@ -141,7 +140,7 @@
 
       </article>
       <article class="text-center w-100 mt-5 bg-transparent my-5">
-        <main class="card bg-transparent border-5 rounded-5 p-1 mx-1 my-5 shadow">
+        <main class="card bg-body bg-opacity-10 border rounded-5 p-1 mx-1 my-5 shadow">
           <section
             id="switcher"
             class="container-fluid text-center"
@@ -394,8 +393,105 @@
     </div>
 
     <div id="scripts">
+      <script>
+        // Constants and Destructuring
+        const { body, documentElement, getElementsByName } = document;
+        const widthBreakpoint = 768;
+
+        // Local Storage Functions
+        const saveSelectedTheme = (string) => localStorage.setItem("theme", string);
+        const getSavedTheme = () => localStorage.getItem("theme");
+
+        // Theme-related Functions
+        const getThemeElements = () => document.getElementsByName("theme");
+        const themeElements = getThemeElements();
+        console.log(themeElements);
+        const getSelectedTheme = () =>
+        {
+          let selectedTheme = null;
+          for (let themeElement of themeElements) {
+            if (themeElement.checked === true) {
+              selectedTheme = themeElement.value;
+              break;
+            }
+          }
+          return selectedTheme;
+        };
+
+        const applyTheme = (theme) =>
+        {
+          if (!typeof +theme === "number") {
+            if (!theme === "default") {
+              console.error("Theme must be a number or 'default'.");
+              return;
+            }
+          }
+          const attribute = "data-theme";
+          documentElement.setAttribute(attribute, theme); // Change activeMode to theme
+          saveSelectedTheme(theme);
+        };
+
+        // Theme Mode Functions
+        const getUserThemeMode = () => (+documentElement.getAttribute("data-theme") >= 5) ? "dark" : "light";
+
+        // Initialization
+        const applyMode = (mode) => document.documentElement.setAttribute("data-theme", mode);
+
+        document.addEventListener("DOMContentLoaded", () =>
+        {
+          const savedTheme = getSavedTheme();
+          const userPreferences = getUserThemeMode();
+
+          applyMode(savedTheme || userPreferences);
+          donTopcoat();
+
+          // Event listener for theme selection
+          themeElements.forEach((element) =>
+          {
+            element.addEventListener("click", () =>
+            {
+              applyTheme(getSelectedTheme());
+              applyMode(getUserThemeMode());
+            });
+          });
+        });
+
+        // Topcoat Functions
+        const isDesktop = () => window.innerWidth >= widthBreakpoint;
+        const getScreenSize = () => (isDesktop() ? 'desktop' : 'mobile');
+
+        const baseRef = 'https://cdnjs.cloudflare.com/ajax/libs/topcoat/0.8.0/css/topcoat-';
+
+        const constructTopcoatHref = (themeMode) => `${baseRef}${getScreenSize()}-${themeMode}.min.css`;
+
+
+        const donTopcoat = () =>
+        {
+          const activeMode = document.documentElement.getAttribute('data-bs-theme') || 'light';
+          console.log(`Active mode: ${activeMode}`);
+
+          const href = constructTopcoatHref(activeMode);
+          console.log(`Topcoat href: ${href}`);
+
+          const topcoat = document.getElementById('topcoat-stylesheet');
+          console.log(`Topcoat element: ${topcoat}`);
+
+          topcoat.setAttribute('href', href);
+          applyMode(activeMode);
+        };
+
+        window.addEventListener('resize', donTopcoat);
+
+        // Create a MutationObserver instance
+        const observer = new MutationObserver(donTopcoat);
+
+        // Configure and start the observer
+        observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-bs-theme'] });
+      </script>
+      <!--
       <script src="./src/js/theme-switcher.js"></script>
       <script src="./src/js/topcoat-loader.js"></script>
+      -->
       <script
         src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
         integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
