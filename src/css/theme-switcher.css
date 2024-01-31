@@ -106,17 +106,17 @@ html[data-theme="9"] {
 
 * {
   --gradient: radial-gradient(ellipse farthest-corner at right bottom,
-  var(--color-accent2) 2%,
-  var(--color-primary) 12%,
-  var(--color-primary) 18%,
-  var(--color-accent) 33%,
+  var(--color-accent2) 10%,
+  var(--color-primary) 20%,
+  var(--color-primary) 30%,
+  var(--color-accent) 40%,
   var(--color-secondary) 50%,
   transparent 80%),
 radial-gradient(ellipse farthest-corner at left top,
-  var(--color-accent2) 2%,
-  var(--color-primary) 12%,
-  var(--color-primary) 18%,
-  var(--color-accent) 33%,
+  var(--color-accent2) 10%,
+  var(--color-primary) 20%,
+  var(--color-primary) 30%,
+  var(--color-accent) 40%,
   var(--color-secondary) 50%,
   transparent 80%);
 }
