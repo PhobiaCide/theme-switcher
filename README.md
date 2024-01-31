@@ -2,8 +2,21 @@
 
 > The Theme Switcher is a 🛠 tool that allows users to easily switch between different visual themes on a website🕶. It provides a selection of predefined CSS variables, which users can choose from and apply to customize the appearance of the website.
 
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/PhobiaCide/theme-switcher?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/PhobiaCide/theme-switcher?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/PhobiaCide/theme-switcher?style=for-the-badge)
+![GitHub Repo stars](https://img.shields.io/github/stars/PhobiaCide/theme-switcher?style=for-the-badge)
+![GitHub watchers](https://img.shields.io/github/watchers/PhobiaCide/theme-switcher?style=for-the-badge)
+
+
+
+
 [![Language Count][language-count-shield]][language-count-url]
+![GitHub top language](https://img.shields.io/github/languages/top/PhobiaCide/theme-switcher?style=for-the-badge)
+
 [![Contributors][contributors-shield]][contributors-url]
+![GitHub repo file or directory count (in path)](https://img.shields.io/github/directory-file-count/PhobiaCide/theme-switcher/src?style=for-the-badge)
+
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
