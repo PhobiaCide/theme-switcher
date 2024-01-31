@@ -6,7 +6,6 @@ const getActiveTheme = () => +document.documentElement.getAttribute("data-theme"
 
 // Theme Mode Functions
 const getMode = () => (+getActiveTheme() >= 5) ? "dark" : "light";
-console.log(`getMode: ${getMode()}`);
 
 // Initialization
 const applyMode = () => document.documentElement.setAttribute("data-bs-theme", getMode());
@@ -14,7 +13,6 @@ const applyMode = () => document.documentElement.setAttribute("data-bs-theme", g
 // Theme-related Functions
 const themeElements = document.getElementsByName("theme");
 const getSelectedTheme = () => {
-  console.log('getSelectedTheme()');
   let selectedTheme = null;
   for (let themeElement of themeElements) {
     if (themeElement.checked) {
@@ -27,29 +25,20 @@ const getSelectedTheme = () => {
 
 // Topcoat Functions
 const donTopcoat = () => {
-  console.log('donTopcoat()');
   const widthBreakpoint = 768;
   const isDesktop = (window.innerWidth >= widthBreakpoint);
-  console.log(`isDesktop: ${isDesktop}`);
   const screenSize = isDesktop ? 'desktop' : 'mobile';
-  console.log(`screenSize: ${screenSize}`);
   const baseRef = 'https://cdnjs.cloudflare.com/ajax/libs/topcoat/0.8.0/css/topcoat-';
   const activeMode = document.documentElement.getAttribute('data-bs-theme');
-  console.log(`activeMode: ${activeMode}`);
   const topcoatHref = `${baseRef}${screenSize}-${activeMode}.min.css`;
-  console.log(`topcoatHref: ${topcoatHref}`);
   document.getElementById('topcoat-stylesheet').setAttribute('href', topcoatHref);
-  console.log(`applyMode()`);
   applyMode();
 };
 
 const activateTheme = () => {
-  console.log('activateTheme()');
   donTopcoat();
   const theme = getSelectedTheme();
-  console.log(`theme: ${theme}`);
   document.documentElement.setAttribute("data-theme", theme);
-  console.log(`saveSelectedTheme(${theme})`);
   saveSelectedTheme(theme);
 };
 

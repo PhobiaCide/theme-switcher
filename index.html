@@ -71,61 +71,59 @@
       class="container-fluid rounded-5 mx-auto text-start m-0 justify-content-start shadow pt-5 mt-5"
     >
       <main class="card bg-transparent rounded-5">
-        <header class="card-header rounded-top-5 rounded-bottom-0 p-0">
+        <header class="card-header bg-primary rounded-top-5 rounded-bottom-0 p-0">
           <h2 class="text-center rounded-pill card-title display-6">
             Welcome to the Sci-Fi Theme Switcher!
           </h2>
+
         </header>
         <article class="card-body w-100 border rounded-5 rounded-top-0 p-0 m-0">
-          <header class="container bg-info bg-opacity-10 border rounded border-info mt-5 p-2 px-0">
+          <header class="bg-info bg-opacity-10 border rounded border-info mt-5">
             <h3
               id="info"
               class="text-center"
             >Below are some frequently asked questions</h3>
           </header>
-          <section class="bg-transparent px-5 mx-5">
+          <section class="bg-transparent">
             <p class="container-fluid d-block text-center rounded-bottom-5 my-5">
-            <h3 class="align-middle text-start">What?</h3>
-            <p class="text-start">
-              This is a simple web development project that uses CSS custom properties (variables) to change the
-              theme
-              of the page. The theme is changed by clicking on one of the switches below. There are three
-              sections:
-            </p>
-            <p class="d-block text-center">
-            <ul>
-              <li>
-                light themes
-              </li>
-              <li>
-                default theme
-              </li>
-              <li>
-                dark themes
-              </li>
-            </ul>
-            </p>
-            <span class="align-middle text-start">
-              <h3 class="text-start">How?</h3>
+            <h3 class="align-middle text-center">What?</h3>
+            
+              <p class="text-start">
+                This is a simple web development project that uses CSS custom properties (variables) to change the
+                theme
+                of the page. The theme is changed by clicking on one of the switches below. There are three
+                sections:
+              </p>
+              <p class="d-block text-center">
+              <ul>
+                <li>
+                  light themes
+                </li>
+                <li>
+                  default theme
+                </li>
+                <li>
+                  dark themes
+                </li>
+              </ul>
+              </p>
+            <span class="align-middle text-center">
+              <h3 class="">How?</h3>
               <p class="p-3">
                 Select a theme from the Theme-switcher panel by following the steps below.
               </p>
-              <ol class="text-start">
+              <ol class="text-center">
                 <li class="">
                   <p>Open the Theme-switcher panel by clicking the following button:<br>
                   </p>
-                  <ul>
-                    <li class="text-center">
-                      <input
-                        type="button"
-                        class="btn btn-outline-info topcoat-button--large--cta mx-auto mx-auto"
-                        style="max-width:100%;font-size:1rem;"
-                        data-bs-toggle="offcanvas"
-                        data-bs-target="#theme-switcher-panel"
-                        value="🎛️ Control Panel"
-                      />
-                    </li>
-                  </ul>
+                  <input
+                    type="button"
+                    class="btn btn-outline-info topcoat-button--large--cta mx-auto mx-auto"
+                    style="max-width:100%;font-size:1rem;"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#theme-switcher-panel"
+                    value="🎛️ Control Panel"
+                  />
                 </li>
                 <li>
                   From the panel that appears on the right-hand side of the screen, select a theme by clicking on the
@@ -138,7 +136,7 @@
         </article>
       </main>
       <aside
-        class="bg-gradient offcanvas offcanvas-end shadow ps-1"
+        class="bg-body bg-opacity-10 offcanvas offcanvas-end shadow ps-1"
         data-bs-scroll="true"
         data-bs-backdrop="false"
         tabindex="-1"
@@ -154,7 +152,7 @@
             aria-label="Close"
           />
         </header>
-        <article class="container-fluid offcanvas-body bg-body border-5 rounded-5 p-1 mx-1 my-5 h-100">
+        <article class="container-fluid offcanvas-body bg-gradient bg-opacity-10 border border-2 rounded-5 px-1 mx-1 h-100">
           <section
             id="switcher"
             class="text-center"
@@ -171,7 +169,7 @@
                 <legend class="">
                   <h2 class="text-center">Light</h2>
                 </legend>
-                <section class="d-inline-block bg-opacity-75 p-5 w-100 rounded">
+                <section class="d-inline-block bg-opacity-10 p-5 w-100 rounded">
                   <br />
                   <span class="row d-block">
                     Alien
@@ -271,7 +269,6 @@
                   <div class="topcoat-switch__toggle"></div>
                 </label>
               </span>
-              <hr class="bg-body-tertiary bg-opacity-50 border border-top-0 border-bottom-0 p-0">
               <fieldset
                 id="dark-themes"
                 form="theme-select"
@@ -363,7 +360,6 @@
         </article>
       </aside>
     </div>
-    <span class="py-5">&nbsp;</span>
     <div
       id="page-footer"
       class="container ms-auto fixed-bottom rounded-pill rounded-bottom-0 rounded-end-0 align-self-end w-90 text-end m-0 justify-content-end shadow border border-end-0 border-top-0 p-2 pe-0 pb-0 pt-1"
