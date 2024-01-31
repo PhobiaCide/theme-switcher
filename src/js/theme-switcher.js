@@ -37,6 +37,7 @@ const getSelectedTheme = () => {
   return selectedTheme;
 };
 const activateTheme = () => {
+  donTopcoat();
   applyMode();
   const theme = getSelectedTheme();
   document.documentElement.setAttribute("data-theme", theme); // Change activeMode to theme
