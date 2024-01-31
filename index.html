@@ -110,9 +110,7 @@
                 </span>
               </span>
               <span class="align-middle text-center">
-             
-                  <h3 class="">How?</h3>
-               
+                <h3 class="">How?</h3>
                 <p class="p-3">
                   Select a theme from the Theme-switcher panel by following the steps below.
                 </p>
@@ -140,7 +138,7 @@
         </article>
       </main>
       <aside
-        class="bg-transparent offcanvas offcanvas-end shadow ps-1"
+        class="bg-gradient offcanvas offcanvas-end shadow ps-1"
         data-bs-scroll="true"
         data-bs-backdrop="false"
         tabindex="-1"
@@ -156,26 +154,27 @@
             aria-label="Close"
           ></button>
         </header>
-        <article class="container-fluid offcanvas-body bg-transparent border-5 rounded-5 p-1 mx-1 my-5 h-100">
+        <article
+          class="container-fluid offcanvas-body border bg-body bg-opacity-25 rounded-5 p-1 mx-1 my-5 h-100"
+        >
           <section
             id="switcher"
             class="text-center"
           >
             <form
               id="theme-select"
-              class="container bg-transparent bg-body bg-opacity-25 rounded-5"
+              class="container bg-body text-body text-center bg-opacity-25 rounded-5"
             >
               <fieldset
                 id="light-themes"
                 form="theme-select"
-                class="bg-light bg-opacity-25 rounded-top-5 d-inline-block text-end border border-bottom-0"
+                class="bg-light bg-opacity-25 rounded-top-5 d-block text-end border border-bottom-0 px-auto"
               >
-                <legend class="">
+              <span class="d-inline-block bg-opacity-0 p-5 w-100 rounded">
+              <legend class="">
                   <h2 class="text-center">Light</h2>
                 </legend>
-                <section class="d-inline-block bg-opacity-10 p-5 w-100 rounded">
-                  <br />
-                  <span class="row d-block">
+                <section class="d-inline-block bg-body bg-opacity-25 p-5 w-100 rounded">
                   Alien
                   <label
                     for="theme-0"
@@ -190,7 +189,6 @@
                     />
                     <div class="topcoat-switch__toggle"></div>
                   </label>
-                  </span>
                   <br />
                   Back To The Future
                   <label
@@ -253,12 +251,20 @@
                   </label>
                   <br />
                 </section>
+                </span>
               </fieldset>
-              <span class="d-block bg-body-tertiary text-end bg-opacity-25 p-5 border border-top-0 border-bottom-0">
-                Reset to default&nbsp;
+              <fieldset
+                id="reset-to-default"
+                form="theme-select"
+                class="bg-body bg-opacity-25 d-block text-end border border-top-0 border-bottom-0 mx-auto"
+              >
+              <span class="d-inline-block bg-opacity-0 p-5 w-100 rounded">
+                <legend>
+                  <h2>Reset</h2>
+                </legend>
                 <label
                   for="reset"
-                  class="topcoat-switch text-start"
+                  class="topcoat-switch"
                 >
                   <input
                     name="theme"
@@ -272,11 +278,12 @@
                   />
                   <div class="topcoat-switch__toggle"></div>
                 </label>
-              </span>
+                </span>
+              </fieldset>
               <fieldset
                 id="dark-themes"
                 form="theme-select"
-                class="bg-dark bg-opacity-25 rounded-bottom-5 d-block text-end border border-top-0"
+                class="bg-dark bg-opacity-25 rounded-bottom-5 d-block text-end border border-top-0 px-auto"
               >
                 <legend>
                   <h2 class="text-center">Dark</h2>
@@ -381,9 +388,7 @@
       </footer>
     </div>
     <div id="scripts">
-
       <script src="./src/js/theme-switcher.js"></script>
-
       <script
         src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
         integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
