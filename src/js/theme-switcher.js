@@ -1,12 +1,26 @@
-// Constants and Destructuring
-const { body, documentElement, getElementsByName } = document;
-const widthBreakpoint = 768;
+// Theme Mode Functions
+const getMode = () => (+getActiveTheme() >= 5) ? "dark" : "light";
+// Initialization
+const applyMode = () => document.documentElement.setAttribute("data-bs-theme", getMode());
+
+// Topcoat Functions
+const donTopcoat = () => {
+  const widthBreakpoint = 768;
+  const isDesktop = (window.innerWidth >= widthBreakpoint);
+  const screenSize = isDesktop ? 'desktop' : 'mobile';
+  const baseRef = 'https://cdnjs.cloudflare.com/ajax/libs/topcoat/0.8.0/css/topcoat-';
+  const activeMode = document.documentElement.getAttribute('data-bs-theme');
+  const constructTopcoatHref = () => `${baseRef}${screenSize}-${activeMode}.min.css`;
+  const href = constructTopcoatHref();
+  document.getElementById('topcoat-stylesheet').setAttribute('href', href);
+  applyMode();
+};
 
 // Local Storage Functions
 const saveSelectedTheme = (string) => localStorage.setItem("theme", string);
 const getSavedTheme = () => localStorage.getItem("theme");
 
-const getActiveTheme = () => +documentElement.getAttribute("data-theme");
+const getActiveTheme = () => +document.documentElement.getAttribute("data-theme");
 
 // Theme-related Functions
 const themeElements = document.getElementsByName("theme");
@@ -23,42 +37,27 @@ const getSelectedTheme = () => {
   return selectedTheme;
 };
 const activateTheme = () => {
+  applyMode();
   const theme = getSelectedTheme();
-  documentElement.setAttribute("data-theme", theme); // Change activeMode to theme
+  document.documentElement.setAttribute("data-theme", theme); // Change activeMode to theme
   saveSelectedTheme(theme);
 };
-// Theme Mode Functions
-const getMode = () => (+getActiveTheme() >= 5) ? "dark" : "light";
-// Initialization
-const applyMode = () => document.documentElement.setAttribute("data-bs-theme", getMode());
+
 
 document.addEventListener("DOMContentLoaded", () => {
-  applyMode();
   donTopcoat();
-
   // Event listener for theme selection
   for (let themeElement of themeElements)
   {
     themeElement.addEventListener("click", () => {
       activateTheme();
-      applyMode();
     });
   }
-  // Topcoat Functions
-  const isDesktop = () => window.innerWidth >= widthBreakpoint;
-  const getScreenSize = () => (isDesktop() ? 'desktop' : 'mobile');
-
-  const baseRef = 'https://cdnjs.cloudflare.com/ajax/libs/topcoat/0.8.0/css/topcoat-';
-
-  const constructTopcoatHref = (themeMode) => `${baseRef}${getScreenSize()}-${themeMode}.min.css`;
 
 
-  const donTopcoat = () => {
-    const activeMode = document.documentElement.getAttribute('data-bs-theme') || 'light';
-    const href = constructTopcoatHref(activeMode);
-    topcoat.setAttribute('href', href);
-    applyMode();
-  };
+
+
+
 
   window.addEventListener('resize', donTopcoat);
 
@@ -74,3 +73,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Configure and start the observer
   observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+});
