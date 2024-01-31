@@ -108,14 +108,12 @@ html[data-theme="9"] {
   --gradient: radial-gradient(ellipse farthest-corner at right bottom,
   var(--color-accent2) 10%,
   var(--color-primary) 20%,
-  var(--color-primary) 30%,
   var(--color-accent) 40%,
   var(--color-secondary) 50%,
   transparent 80%),
 radial-gradient(ellipse farthest-corner at left top,
   var(--color-accent2) 10%,
   var(--color-primary) 20%,
-  var(--color-primary) 30%,
   var(--color-accent) 40%,
   var(--color-secondary) 50%,
   transparent 80%);
@@ -123,11 +121,12 @@ radial-gradient(ellipse farthest-corner at left top,
 
 .bg-primary {
   background-color: var(--color-accent) !important;
+  filter:opacity(.9)
 }
 
 .card {
-  text-rendering: geometricPrecision;
-  backdrop-filter: blur(90vw);
+  
+  backdrop-filter: blur(10vw);
 }
 
 input, button{
