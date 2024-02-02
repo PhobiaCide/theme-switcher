@@ -9,8 +9,27 @@ body {
 
 }
 
+.w-80 {
+  width: 80%;
+}
+
 .w-90 {
   width: 90vw;
+
+}
+
+.glass {
+  backdrop-filter: blur(30px);  
+}
+
+html[data-bs-theme="light"] .glass {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+html[data-bs-theme="dark"] .glass {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -121,6 +140,12 @@ radial-gradient(ellipse farthest-corner at left top,
   transparent 80%);
 }
 
+
+
+.title {
+  letter-spacing: .05rem;
+}
+
 .bg-primary {
   background-color: var(--color-accent) !important;
 }
@@ -134,10 +159,10 @@ input, button{
   max-width: 90vw;
 }
 
-.bg-gradient {
+.gradient {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto; 
+  background-size: cover; 
   background-image: var(--gradient) !important;
 }
 
@@ -149,3 +174,16 @@ ul {
   padding: 1rem;
   margin: 1rem;
 }
+.topcoat-switch__toggle {
+  font-size: medium;
+  font-weight: 999;
+}
+/*
+.topcoat-switch__toggle:before {
+	color: #00aa00aa!important;
+}
+
+.topcoat-switch__toggle:after {
+  color: #aa0000aa !important;
+}
+*/

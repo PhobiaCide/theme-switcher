@@ -36,10 +36,7 @@ const applyMode = () => document.documentElement.setAttribute("data-bs-theme", g
 
 document.addEventListener("DOMContentLoaded", () =>
 {
-  const savedTheme = getSavedTheme();
-  const userPreferences = getThemeMode();
-
-  applyMode(savedTheme || userPreferences);
+  applyMode();
   donTopcoat();
 
   // Event listener for theme selection
@@ -47,8 +44,8 @@ document.addEventListener("DOMContentLoaded", () =>
   {
     element.addEventListener("click", () =>
     {
-      activateTheme(getSelectedTheme());
-      applyMode(getThemeMode());
+      activateTheme();
+      applyMode();
     });
   });
 });

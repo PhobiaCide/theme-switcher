@@ -51,41 +51,41 @@
     />
   </head>
 
-  <body class="container-fluid bg-gradient bg-fixed bg-opacity-10 w-100 h-100 subpixel-antialiased text-body">
+  <body class="container-fluid gradient bg-opacity-100 w-100 h-100 bg-fixed subpixel-antialiased text-body">
     <div
       id="header"
-      class="container-fluid bg-gradient me-auto fixed-top rounded-pill rounded-top-0 rounded-start-0 align-self-start w-90 text-start m-0 justify-content-start shadow border border-start-0 border-top-0 p-2 ps-0 pt-0 pb-1"
+      class="container glass me-auto fixed-top rounded-pill rounded-top-0 rounded-start-0 align-self-start w-90 text-start m-0 justify-content-start p-5 ps-0 pt-0 pb-1 shadow"
     >
       <header
-        class="card bg-body bg-opacity-10 jumbotron jumbotron-fluid w-100 text-end rounded-pill rounded-top-0 rounded-start-0 p-1 pt-0 ps-0 pe-0"
+        class="jumbotron jumbotron-fluid bg-body bg-opacity-50 text-body w-100 text-end rounded-pill rounded-top-0 rounded-start-0"
       >
-        <div class="jumbotron bg-body bg-opacity-10 rounded-pill rounded-top-0 rounded-start-0">
-          <h1 class="align-bottom display-2 topcoat-navigation-bar__title text-center">Sci-Fi Theme Switcher
-          </h1>
-        </div>
+        <h1 class="align-bottom display-2 text-center title">Sci-Fi Theme Switcher
+        </h1>
       </header>
     </div>
+    <span class="d-block my-5 py-5"></span>
     <div
       id="content"
-      class="container-fluid rounded-5 mx-auto text-start m-0 justify-content-start shadow mt-5"
+      class="container rounded mx-auto text-start justify-content-start shadow"
     >
-      <main class="card bg-transparent">
-        <header class="card-header rounded-top-5 rounded-bottom-0 p-0">
-          <h2 class="text-center rounded-pill card-title display-6">
+
+      <main class="card glass rounded ">
+        <header class="card-header glass rounded p-3">
+          <h2 class="text-center card-title display-6">
             Welcome to the Sci-Fi Theme Switcher!
           </h2>
-          <h3 class="text-center">Below are some frequently asked questions</h3>
         </header>
         <article class="card-body w-100 border-5 rounded-5 rounded-top-0 p-0 m-0">
-          <section class="bg-transparent">
-            <p></p>
-            <span
+            <p class="">
+            <h3 class="text-center bg-info rounded w-50 m-3 mx-auto">Below are some frequently asked questions</h3>
+            </p>
+            <section
               id="info"
               class="container-fluid d-block text-center rounded-bottom-5 my-5"
             >
               <span class="align-middle">
                 <span>
-                  <h3 class="">What is it?</h3>
+                  <h3 class="">What?</h3>
                 </span>
                 <span class="w-100 d-block text-start">
                   <p class="">
@@ -121,7 +121,7 @@
                     <input
                       type="button"
                       class="btn btn-outline-info topcoat-button--large--cta mx-auto mx-auto"
-                      style="max-width:100%;font-size:1rem;"
+                      style="max-width:90vw;font-size:1rem;"
                       data-bs-toggle="offcanvas"
                       data-bs-target="#theme-switcher-panel"
                       value="🎛️ Control Panel"
@@ -133,12 +133,12 @@
                   </li>
                 </ol>
               </span>
-            </span>
+            </section>
           </section>
         </article>
       </main>
       <aside
-        class="bg-gradient offcanvas offcanvas-end shadow ps-1"
+        class="offcanvas offcanvas-end card glass rounded-5 rounded-end-0 shadow"
         data-bs-scroll="true"
         data-bs-backdrop="false"
         tabindex="-1"
@@ -147,230 +147,264 @@
         style="z-index: 1;"
       >
         <header class="offcanvas-header d-block text-end">
+          <h2
+            id="theme-switcher-title"
+            class="offcanvas-title text-center"
+          ></h2>
           <button
             type="button"
-            class="btn btn-close btn-danger bg-opacity-10 border border-danger"
-            data-bs-dismiss="offcanvas"
+            class="btn btn-close btn-outline-danger bg-opacity-0 border border-danger"
+            data-bs-dismiss="theme-switcher-panel"
             aria-label="Close"
           ></button>
         </header>
-        <article
-          class="container-fluid offcanvas-body border bg-body bg-opacity-25 rounded-5 p-1 mx-1 my-5 h-100"
+        <form
+          id="theme-select"
+          class="container-fluid glass offcanvas-body text-body text-center rounded p-0"
         >
-          <section
-            id="switcher"
-            class="text-center"
+          <fieldset
+            id="light-themes"
+            form="theme-select"
+            class="container text-end glass rounded rounded-bottom-0 d-block border border-bottom-0 px-5 m-0"
           >
-            <form
-              id="theme-select"
-              class="container bg-body text-body text-center bg-opacity-25 rounded-5"
+            <legend class="">
+              <h2 class="text-center">Light</h2>
+            </legend>
+
+            <label
+              for="theme-0"
+              class="my-1 bg-transparent"
             >
-              <fieldset
-                id="light-themes"
-                form="theme-select"
-                class="bg-light bg-opacity-25 rounded-top-5 d-block text-end border border-bottom-0 px-auto"
-              >
-              <span class="d-inline-block bg-opacity-0 p-5 w-100 rounded">
-              <legend class="">
-                  <h2 class="text-center">Light</h2>
-                </legend>
-                <section class="d-inline-block bg-body bg-opacity-25 p-5 w-100 rounded">
-                  Alien
-                  <label
-                    for="theme-0"
-                    class="topcoat-switch text-start m-3"
-                  >
-                    <input
-                      name="theme"
-                      id="theme-0"
-                      type="radio"
-                      class="topcoat-switch__input"
-                      value="0"
-                    />
-                    <div class="topcoat-switch__toggle"></div>
-                  </label>
-                  <br />
-                  Back To The Future
-                  <label
-                    for="theme-1"
-                    class="topcoat-switch text-start m-3"
-                  >
-                    <input
-                      id="theme-1"
-                      name="theme"
-                      type="radio"
-                      class="topcoat-switch__input"
-                      value="1"
-                    />
-                    <div class="topcoat-switch__toggle"></div>
-                  </label>
-                  <br />
-                  Star Wars: Tatooine
-                  <label
-                    for="theme-2"
-                    class="topcoat-switch text-start m-3"
-                  >
-                    <input
-                      id="theme-2"
-                      name="theme"
-                      type="radio"
-                      class="topcoat-switch__input"
-                      value="2"
-                    />
-                    <div class="topcoat-switch__toggle"></div>
-                  </label>
-                  <br />
-                  The 5th Element
-                  <label
-                    for="theme-3"
-                    class="topcoat-switch text-start m-3"
-                  >
-                    <input
-                      id="theme-3"
-                      name="theme"
-                      type="radio"
-                      class="topcoat-switch__input"
-                      value="3"
-                    />
-                    <div class="topcoat-switch__toggle"></div>
-                  </label>
-                  <br />
-                  Close Encounters
-                  <label
-                    for="theme-4"
-                    class="topcoat-switch text-start m-3"
-                  >
-                    <input
-                      id="theme-4"
-                      name="theme"
-                      type="radio"
-                      class="topcoat-switch__input"
-                      value="4"
-                    />
-                    <div class="topcoat-switch__toggle"></div>
-                  </label>
-                  <br />
-                </section>
-                </span>
-              </fieldset>
-              <fieldset
-                id="reset-to-default"
-                form="theme-select"
-                class="bg-body bg-opacity-25 d-block text-end border border-top-0 border-bottom-0 mx-auto"
-              >
-              <span class="d-inline-block bg-opacity-0 p-5 w-100 rounded">
-                <legend>
-                  <h2>Reset</h2>
-                </legend>
-                <label
-                  for="reset"
-                  class="topcoat-switch"
-                >
-                  <input
-                    name="theme"
-                    type="radio"
-                    id="reset"
-                    class="topcoat-switch__input"
-                    data-bs-toggle="tooltip"
-                    data-bs-title="Reset to default theme"
-                    value="default"
-                    checked
-                  />
-                  <div class="topcoat-switch__toggle"></div>
-                </label>
-                </span>
-              </fieldset>
-              <fieldset
-                id="dark-themes"
-                form="theme-select"
-                class="bg-dark bg-opacity-25 rounded-bottom-5 d-block text-end border border-top-0 px-auto"
-              >
-                <legend>
-                  <h2 class="text-center">Dark</h2>
-                </legend>
-                <span class="d-inline-block bg-opacity-0 p-5 w-100 rounded">
-                  Blade&nbsp;Runner
-                  <label
-                    for="theme-5"
-                    class="topcoat-switch text-start my-3"
-                  >
-                    <input
-                      id="theme-5"
-                      name="theme"
-                      type="radio"
-                      class="topcoat-switch__input"
-                      value="5"
-                    />
-                    <div class="topcoat-switch__toggle"></div>
-                  </label>
-                  <br />
-                  Jurassic&nbsp;Park
-                  <label
-                    for="theme-6"
-                    class="topcoat-switch text-start my-3"
-                  >
-                    <input
-                      id="theme-6"
-                      name="theme"
-                      type="radio"
-                      class="topcoat-switch__input"
-                      value="6"
-                    />
-                    <div class="topcoat-switch__toggle"></div>
-                  </label>
-                  <br />
-                  Star&nbsp;Wars: Death&nbsp;Star
-                  <label
-                    for="theme-7"
-                    class="topcoat-switch text-start my-3"
-                  >
-                    <input
-                      id="theme-7"
-                      name="theme"
-                      type="radio"
-                      class="topcoat-switch__input"
-                      value="7"
-                    />
-                    <div class="topcoat-switch__toggle"></div>
-                  </label>
-                  <br />
-                  The&nbsp;Matrix
-                  <label
-                    for="theme-8"
-                    class="topcoat-switch text-start my-3"
-                  >
-                    <input
-                      id="theme-8"
-                      name="theme"
-                      type="radio"
-                      class="topcoat-switch__input"
-                      value="8"
-                    />
-                    <div class="topcoat-switch__toggle"></div>
-                  </label>
-                  <br />
-                  Dune
-                  <label
-                    for="theme-9"
-                    class="topcoat-switch text-start my-3"
-                  >
-                    <input
-                      id="theme-9"
-                      name="theme"
-                      type="radio"
-                      class="topcoat-switch__input"
-                      value="9"
-                    />
-                    <div class="topcoat-switch__toggle"></div>
-                  </label>
-                  <br />
-                </span>
-              </fieldset>
-            </form>
-          </section>
-        </article>
+              Alien
+              <span class="topcoat-switch text-start">
+                <input
+                  name="theme"
+                  id="theme-0"
+                  type="radio"
+                  class="topcoat-switch__input"
+                  value="0"
+                />
+                <div class="topcoat-switch__toggle"></div>
+              </span>
+            </label>
+
+            <br />
+
+            <label
+              for="theme-1"
+              class="my-1"
+            >
+              Back&nbsp;To&nbsp;The&nbsp;Future
+              <span class="topcoat-switch text-start">
+                <input
+                  id="theme-1"
+                  name="theme"
+                  type="radio"
+                  class="topcoat-switch__input"
+                  value="1"
+                />
+                <div class="topcoat-switch__toggle"></div>
+              </span>
+            </label>
+
+            <br />
+
+            <label
+              for="theme-2"
+              class="my-1"
+            >
+              Tatooine
+              <span class="topcoat-switch text-start">
+                <input
+                  id="theme-2"
+                  name="theme"
+                  type="radio"
+                  class="topcoat-switch__input"
+                  value="2"
+                />
+                <div class="topcoat-switch__toggle"></div>
+              </span>
+            </label>
+
+            <br />
+
+            <label
+              for="theme-3"
+              class="my-1"
+            >
+              The&nbsp;5<sup>th</sup>&nbsp;Element
+              <span class="topcoat-switch text-start">
+                <input
+                  id="theme-3"
+                  name="theme"
+                  type="radio"
+                  class="topcoat-switch__input"
+                  value="3"
+                />
+                <div class="topcoat-switch__toggle"></div>
+              </span>
+            </label>
+
+            <br />
+
+            <label
+              for="theme-4"
+              class="my-1"
+            >
+              Close&nbsp;Encounters
+              <span class="topcoat-switch text-start">
+                <input
+                  id="theme-4"
+                  name="theme"
+                  type="radio"
+                  class="topcoat-switch__input"
+                  value="4"
+                />
+                <div class="topcoat-switch__toggle"></div>
+              </span>
+            </label>
+
+            <br />
+
+          </fieldset>
+
+          <fieldset
+            id="reset-to-default"
+            form="theme-select"
+            class="container text-end glass d-block border border-top-0 border-bottom-0 px-5 m-0"
+          >
+            <legend>
+              <h2 class="text-center">Reset</h2>
+            </legend>
+            <label
+              for="reset"
+              class="my-1"
+            >
+              Default
+              <span class="topcoat-switch text-start">
+                <input
+                  name="theme"
+                  type="radio"
+                  id="reset"
+                  class="topcoat-switch__input"
+                  value="default"
+                  checked
+                />
+                <div class="topcoat-switch__toggle"></div>
+              </span>
+            </label>
+          </fieldset>
+
+          <fieldset
+            id="dark-themes"
+            form="theme-select"
+            class="container text-end glass rounded-bottom d-block border border-top-0 px-5 m-0"
+          >
+
+            <legend>
+              <h2 class="text-center">Dark</h2>
+            </legend>
+
+            <label
+              for="theme-5"
+              class="my-1"
+            >
+              Blade&nbsp;Runner
+              <span class="topcoat-switch text-start">
+                <input
+                  id="theme-5"
+                  name="theme"
+                  type="radio"
+                  class="topcoat-switch__input"
+                  value="5"
+                />
+                <div class="topcoat-switch__toggle"></div>
+              </span>
+            </label>
+
+            <br />
+
+            <label
+              for="theme-6"
+              class="my-1"
+            >
+              Jurassic&nbsp;Park
+              <span class="topcoat-switch text-start">
+                <input
+                  id="theme-6"
+                  name="theme"
+                  type="radio"
+                  class="topcoat-switch__input"
+                  value="6"
+                />
+                <div class="topcoat-switch__toggle"></div>
+              </span>
+            </label>
+
+            <br />
+
+            <label
+              for="theme-7"
+              class="my-1"
+            >
+              Death&nbsp;Star
+              <span class="topcoat-switch text-start">
+                <input
+                  id="theme-7"
+                  name="theme"
+                  type="radio"
+                  class="topcoat-switch__input"
+                  value="7"
+                />
+                <div class="topcoat-switch__toggle"></div>
+              </span>
+            </label>
+
+            <br />
+
+            <label
+              for="theme-8"
+              class="my-1"
+            >
+              The&nbsp;Matrix
+              <span class="topcoat-switch text-start">
+                <input
+                  id="theme-8"
+                  name="theme"
+                  type="radio"
+                  class="topcoat-switch__input"
+                  value="8"
+                />
+                <div class="topcoat-switch__toggle"></div>
+              </span>
+            </label>
+
+            <br />
+
+            <label
+              for="theme-9"
+              class="my-1"
+            >
+              Dune
+              <span class="topcoat-switch text-start">
+                <input
+                  id="theme-9"
+                  name="theme"
+                  type="radio"
+                  class="topcoat-switch__input"
+                  value="9"
+                />
+                <div class="topcoat-switch__toggle"></div>
+              </span>
+            </label>
+
+            <br />
+          </fieldset>
+        </form>
+
       </aside>
     </div>
+    <span class="d-block my-5 py-5"></span>
     <div
       id="page-footer"
       class="container ms-auto fixed-bottom rounded-pill rounded-bottom-0 rounded-end-0 align-self-end w-90 text-end m-0 justify-content-end shadow border border-end-0 border-top-0 p-2 pe-0 pb-0 pt-1"
@@ -389,6 +423,9 @@
     </div>
     <div id="scripts">
       <script src="./src/js/theme-switcher.js"></script>
+      <!--
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/cjs/popper-lite.min.js" integrity="sha512-cIlBWu/1xp/u9wKnMQkyeobWm7OkkgYRVjd8Rgt40Mz+zopv97dPFWUQXiy0ng5AESp/YEr0dUn4lTTypvgo9w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      -->
       <script
         src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
         integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
