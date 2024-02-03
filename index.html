@@ -2,7 +2,7 @@
 <html
   lang="en-us"
   data-bs-core="modern"
-  data-bs-theme="dark"
+  data-bs-theme="light"
   data-theme="default"
 >
 
@@ -54,7 +54,7 @@
   <body class="container-fluid gradient bg-opacity-100 w-100 h-100 bg-fixed subpixel-antialiased text-body">
     <div
       id="header"
-      class="container glass me-auto fixed-top rounded-pill rounded-top-0 rounded-start-0 align-self-start w-90 text-start m-0 justify-content-start p-5 ps-0 pt-0 pb-1 shadow"
+      class="card container glass me-auto fixed-top rounded-pill rounded-top-0 rounded-start-0 align-self-start w-90 text-start m-0 justify-content-start p-3 ps-0 pt-0 pb-1 shadow"
     >
       <header
         class="jumbotron jumbotron-fluid bg-body bg-opacity-50 text-body w-100 text-end rounded-pill rounded-top-0 rounded-start-0"
@@ -66,79 +66,109 @@
     <span class="d-block my-5 py-5"></span>
     <div
       id="content"
-      class="container rounded mx-auto text-start justify-content-start shadow"
+      class="container rounded mx-auto text-start justify-content-start shadow p-0"
     >
 
-      <main class="card glass rounded ">
-        <header class="card-header glass rounded p-3">
+      <main class="card glass">
+        <header class="card-header rounded p-0">
           <h2 class="text-center card-title display-6">
             Welcome to the Sci-Fi Theme Switcher!
           </h2>
         </header>
-        <article class="card-body w-100 border-5 rounded-5 rounded-top-0 p-0 m-0">
-            <p class="">
-            <h3 class="text-center bg-info rounded w-50 m-3 mx-auto">Below are some frequently asked questions</h3>
-            </p>
-            <section
+        <article class="card-body container border-5 rounded-5 rounded-top-0">
+          <section class="container bg-transparent w-75">
+            <p
               id="info"
-              class="container-fluid d-block text-center rounded-bottom-5 my-5"
+              class="container d-block rounded-bottom-5 my-5"
             >
-              <span class="align-middle">
-                <span>
-                  <h3 class="">What?</h3>
-                </span>
-                <span class="w-100 d-block text-start">
-                  <p class="">
-                    This is a simple web development project that uses CSS custom properties (variables) to change the
-                    theme
-                    of the page. The theme is changed by clicking on one of the switches below. There are three
+            <h3 class="text-center bg-info mx-auto rounded">Below are some frequently asked questions</h3>
+            <span class="container align-middle">
+              <span class="container">
+                <h3 class="text-center border border-top-0 border-start-0 border-end-0">What?</h3>
+              </span>
+              <span class="w-100 d-block text-center">
+              
+                  <p>
+                    This is a project for web written in
+                  </p>
+                  <span class="d-inline-block bg-primary border rounded p-1 pt-3 px-3">
+                    <figure class="d-inline-block"><img
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                        height="64"
+                        width="64"
+                      />
+                      <figcaption class="text-center">HTML5</figcaption>
+                    </figure>
+                    <figure class="d-inline-block"><img
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+                        height="64"
+                        width="64"
+                      />
+                      <figcaption class="text-center">CSS3</figcaption>
+                    </figure>
+                    <figure class="d-inline-block"><img
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                        height="64"
+                        width="64"
+                      />
+                      <figcaption class="text-center">JavaScript</figcaption>
+                    </figure>
+                  </span>
+                  <br />
+                  <p>
+                    It uses CSS custom properties (A.K.A. variables) to change the
+                    color scheme of the page.
+                  </p>
+                  <p>
+                    The theme is changed by clicking on one of the switches below. There are three
                     sections:
                   </p>
-                  <p class="d-block text-center">
-                  <ul>
-                    <li>
-                      light themes
-                    </li>
-                    <li>
-                      default theme
-                    </li>
-                    <li>
-                      dark themes
-                    </li>
-                  </ul>
-                  </p>
-                </span>
-              </span>
-              <span class="align-middle text-center">
-                <h3 class="">How?</h3>
-                <p class="p-3">
-                  Select a theme from the Theme-switcher panel by following the steps below.
-                </p>
-                <ol class="text-center">
-                  <li class="">
-                    <p>Open the Theme-switcher panel by clicking the following button:<br>
-                    </p>
-                    <input
-                      type="button"
-                      class="btn btn-outline-info topcoat-button--large--cta mx-auto mx-auto"
-                      style="max-width:90vw;font-size:1rem;"
-                      data-bs-toggle="offcanvas"
-                      data-bs-target="#theme-switcher-panel"
-                      value="🎛️ Control Panel"
-                    />
+               
+                <p class="d-block text-center">
+                <ul>
+                  <li>
+                    light themes
                   </li>
                   <li>
-                    From the panel that appears on the right-hand side of the screen, select a theme by clicking on the
-                    cooresponding switch.
+                    default theme
                   </li>
-                </ol>
+                  <li>
+                    dark themes
+                  </li>
+                </ul>
+                </p>
               </span>
-            </section>
+            </span>
+            <span class="align-middle text-center">
+              <h3 class="text-center border border-top-0 border-start-0 border-end-0">How?</h3>
+              <p class="p-3">
+                Select a theme from the Theme-switcher panel by following the steps below.
+              </p>
+              <ol class="text-center">
+                <li class="">
+                  <p>Open the Theme-switcher panel by clicking the following button:<br>
+                  </p>
+                  <input
+                    type="button"
+                    class="btn btn-outline-info topcoat-button--large--cta mx-auto mx-auto"
+                    style="max-width:90vw;font-size:1rem;"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#theme-switcher-panel"
+                    value="🎛️ Control Panel"
+                  />
+                </li>
+                <li>
+                  From the panel that appears on the right-hand side of the screen, select a theme by clicking on the
+                  cooresponding switch.
+                </li>
+              </ol>
+            </span>
+            </p>
           </section>
         </article>
       </main>
       <aside
-        class="offcanvas offcanvas-end card glass rounded-5 rounded-end-0 shadow"
+        class="card offcanvas offcanvas-end glass rounded-5 rounded-end-0 shadow"
         data-bs-scroll="true"
         data-bs-backdrop="false"
         tabindex="-1"
@@ -154,7 +184,7 @@
           <button
             type="button"
             class="btn btn-close btn-outline-danger bg-opacity-0 border border-danger"
-            data-bs-dismiss="theme-switcher-panel"
+            data-bs-dismiss="offcanvas"
             aria-label="Close"
           ></button>
         </header>
@@ -165,7 +195,7 @@
           <fieldset
             id="light-themes"
             form="theme-select"
-            class="container text-end glass rounded rounded-bottom-0 d-block border border-bottom-0 px-5 m-0"
+            class="container text-end rounded rounded-bottom-0 d-block border border-bottom-0 px-5"
           >
             <legend class="">
               <h2 class="text-center">Light</h2>
@@ -173,7 +203,7 @@
 
             <label
               for="theme-0"
-              class="my-1 bg-transparent"
+              class="my-1"
             >
               Alien
               <span class="topcoat-switch text-start">
@@ -271,7 +301,7 @@
           <fieldset
             id="reset-to-default"
             form="theme-select"
-            class="container text-end glass d-block border border-top-0 border-bottom-0 px-5 m-0"
+            class="container text-end d-block border border-top-0 border-bottom-0 px-5"
           >
             <legend>
               <h2 class="text-center">Reset</h2>
@@ -298,7 +328,7 @@
           <fieldset
             id="dark-themes"
             form="theme-select"
-            class="container text-end glass rounded-bottom d-block border border-top-0 px-5 m-0"
+            class="container text-end rounded-bottom d-block border border-top-0 px-5"
           >
 
             <legend>
@@ -404,7 +434,6 @@
 
       </aside>
     </div>
-    <span class="d-block my-5 py-5"></span>
     <div
       id="page-footer"
       class="container ms-auto fixed-bottom rounded-pill rounded-bottom-0 rounded-end-0 align-self-end w-90 text-end m-0 justify-content-end shadow border border-end-0 border-top-0 p-2 pe-0 pb-0 pt-1"
@@ -423,9 +452,6 @@
     </div>
     <div id="scripts">
       <script src="./src/js/theme-switcher.js"></script>
-      <!--
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/cjs/popper-lite.min.js" integrity="sha512-cIlBWu/1xp/u9wKnMQkyeobWm7OkkgYRVjd8Rgt40Mz+zopv97dPFWUQXiy0ng5AESp/YEr0dUn4lTTypvgo9w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      -->
       <script
         src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
         integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="

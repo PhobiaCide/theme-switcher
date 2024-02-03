@@ -187,3 +187,16 @@ ul {
   color: #aa0000aa !important;
 }
 */
+
+.bg-theme-accent {
+  background-color: var(--color-accent) !important;
+}
+.bg-theme-accent2 {
+  background-color: var(--color-accent2) !important;
+}
+.bg-theme-secondary {
+  background-color: var(--color-secondary) !important;
+}
+.bg-theme-primary {
+  background-color: var(--color-primary) !important;
+} 
