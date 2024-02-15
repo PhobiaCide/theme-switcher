@@ -1,6 +1,8 @@
 # 🎨 Theme Switcher
 
-> The Theme Switcher is a 🛠 tool that allows users to easily switch between different visual themes on a website🕶. It provides a selection of predefined CSS variables, which users can choose from and apply to customize the appearance of the website.
+> The Theme Switcher is a drop-in page feature that allows users to easily switch between different visual themes throughout a website🕶.
+It provides a selection of predefined yet easily customized CSS variables for ten color palettes, and a script to update the page and save the selection to local storage.
+Users may select from the palette options to trigger the script.
 
 [![Language Count][language-count-shield]][language-count-url]
 [![Contributors][contributors-shield]][contributors-url]
