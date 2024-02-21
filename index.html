@@ -54,7 +54,7 @@
   <body class="container-fluid gradient bg-opacity-100 w-100 h-100 bg-fixed subpixel-antialiased text-body">
     <div
       id="header"
-      class="card container glass me-auto fixed-top rounded-pill rounded-top-0 rounded-start-0 align-self-start w-85 text-start m-0 justify-content-start p-3 ps-0 pt-0 pb-1 shadow"
+      class="container glass me-auto fixed-top rounded-pill rounded-top-0 rounded-start-0 align-self-start w-85 text-start m-0 justify-content-start pe-5 ps-0 pt-0 pb-0 shadow"
     >
       <header
         class="jumbotron jumbotron-fluid bg-body bg-opacity-50 text-body w-100 text-end rounded-pill rounded-top-0 rounded-start-0"
@@ -77,138 +77,172 @@
         </header>
         <article
           id="info"
-          class="card-body border-5 rounded-5 rounded-top-0 d-block my-5"
+          class="card-body d-flex flex-column border-5 rounded-5 rounded-top-0 d-block my-5 mx-auto"
         >
-          <h3 class="text-center bg-info bg-opacity-50 w-75 border border-info mx-auto rounded p-3 shadow">Below are
-            some frequently asked questions</h3>
-          <section class="card glass align-middle text-center">
-            <header class="card-header">
-              <h3 class="text-center border border-top-0 border-start-0 border-end-0 card-title">What?</h3>
-            </header>
-            <span class="w-100 d-block text-center">
-              <p class="p-1">
-                <u>The Theme Switcher</u> is a project for web using:
-              </p>
-              <span class="d-inline-block bg-primary border rounded-pill p-1 pt-3 px-3 my-2">
-                <ul class="d-inline-block topcoat-list-container bg-gradient rounded-pill">
-                  <li class="topcoat-list__item">
-                    <figure class="d-inline-block"><img
-                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-                        height="64"
-                        width="64"
-                      />
-                      <figcaption class="text-center">HTML5</figcaption>
-                    </figure>
+          <header class="d-block">
+            <h3 class="text-center bg-info bg-opacity-50 w-75 border border-info mx-auto rounded py-3 shadow">Below are
+              some frequently asked questions</h3>
+          </header>
+          <ul class="topcoat-list-container">
+            <li class="topcoat-list__item">
+              <section class="card d-flex glass col align-middle text-center my-5">
+                <header class="card-header">
+                  <h3 class="text-center border border-top-0 border-start-0 border-end-0 card-title">What?</h3>
+                </header>
+                <ul class="topcoat-list-container p-1">
+                  <header>
+                    <h4>
+                      <u>The Sci-Fi Theme Switcher</u> is a <i>web project</i>
+                    </h4>
+                    <h5>Made With</h5>
+
+                    <span class="topcoat-list">
+                      <ul
+                        class="d-flex flex-column topcoat-list-container rounded-pill border bg-accent border border-accent shadow py-5 my-5"
+                      >
+                        <li class="topcoat-list__item border-top-0">
+                          <figure class="d-inline-block"><img
+                              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                              height="64"
+                              width="64"
+                            />
+                            <figcaption class="text-center">HTML5</figcaption>
+                          </figure>
+                        </li>
+                        <li class="topcoat-list__item">
+                          <figure class="d-inline-block"><img
+                              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+                              height="64"
+                              width="64"
+                            />
+                            <figcaption class="text-center">CSS3</figcaption>
+                          </figure>
+                        </li>
+                        <li class="topcoat-list__item border-bottom-0">
+                          <figure class="d-inline-block"><img
+                              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                              height="64"
+                              width="64"
+                            />
+                            <figcaption class="text-center">JavaScript</figcaption>
+                          </figure>
+                        </li>
+                      </ul>
+                    </span>
+                  </header>
+                  <li class="topcoat-list__item p-1">
+                    <p>
+                      It uses CSS custom properties (A.K.A. variables) to change the
+                      color scheme of the page.
+                    </p>
                   </li>
-                  <li class="topcoat-list__item">
-                    <figure class="d-inline-block"><img
-                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-                        height="64"
-                        width="64"
-                      />
-                      <figcaption class="text-center">CSS3</figcaption>
-                    </figure>
+
+                  <li class="topcoat-list__item p-1">
+                    <p>
+                      There are three
+                      sections:
+                    </p>
+                    <p class="">
+                    <ul
+                      class="topcoat-list-container d-inline-block rounded-pill border bg-accent border shadow p-1 pt-3 px-3 my-2"
+                    >
+                      <li class="topcoat-list__item border-top-0">
+                        light themes
+                      </li>
+                      <li class="topcoat-list__item">
+                        default theme
+                      </li>
+                      <li class="topcoat-list__item border-bottom-0">
+                        dark themes
+                      </li>
+                    </ul>
+                    </p>
                   </li>
-                  <li class="topcoat-list__item">
-                    <figure class="d-inline-block"><img
-                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-                        height="64"
-                        width="64"
-                      />
-                      <figcaption class="text-center">JavaScript</figcaption>
-                    </figure>
+                  <li class="topcoat-list__item p-1">
+                    <p>
+                      To demo the project and change the theme, follow the instructions below.
+                    </p>
                   </li>
                 </ul>
-              </span>
-              <br />
-              <br />
-              <p>
-                It uses CSS custom properties (A.K.A. variables) to change the
-                color scheme of the page.
-              </p>
-              <p>
-                To demo the project and change the theme, follow the instructions below.
-              </p>
-              <p>
-                There are three
-                sections:
-              </p>
-              <p class="">
-              <ul class="d-inline-block bg-primary border rounded p-4 my-3 shadow topcoat-list-container">
-                <li class="topcoat-list__item">
-                  light themes
-                </li>
-                <li class="topcoat-list__item">
-                  default theme
-                </li>
-                <li class="topcoat-list__item">
-                  dark themes
-                </li>
-              </ul>
-              </p>
-            </span>
-          </section>
-          <section class="card glass align-middle text-center">
-            <header class="card-header">
-              <h3 class="text-center card-title border border-top-0 border-start-0 border-end-0">Why?</h3>
-            </header>
-          </section>
-          <section class="card glass align-middle text-center">
-            <header class="card-header">
-              <h3 class="text-center card-title border border-top-0 border-start-0 border-end-0">How?</h3>
-            </header>
-            <p class="p-3">
-              Select a theme from the Theme-switcher panel by following the steps below.
-            </p>
-            <ol class="text-center topcoat-list-container">
-              <li class="topcoat-list__item">
-                <p>Open the Theme-switcher Control Panel by clicking the following button:<br>
+              </section>
+            </li>
+            <li class="topcoat-list__item">
+              <section class="card d-flex glass col align-middle text-center my-5">
+                <header class="card-header">
+                  <h3 class="text-center card-title border border-top-0 border-start-0 border-end-0">Why?</h3>
+                </header>
+                <span class="text-start p-5"></span>
+              </section>
+            </li>
+            <li class="topcoat-list__item">
+              <section class="card d-flex glass col align-middle text-center my-5">
+                <header class="card-header">
+                  <h3 class="text-center card-title border border-top-0 border-start-0 border-end-0">How?</h3>
+                </header>
+                <span class="text-start p-5">
+                  <p class="p-3">
+                    Select a theme from the Theme-switcher panel by following the steps below.
+                  </p>
+                  <ol class="topcoat-list-container">
+                    <li class="topcoat-list__item">
+                      <p>Open the Theme-switcher Control Panel by clicking the following button:
+                        <input
+                          type="button"
+                          class="d-inline-block btn btn-outline-success topcoat-button--large p-1"
+                          style="max-width:90vw;font-size:1rem;"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#theme-switcher-panel"
+                          value="🎛️"
+                        />
+                      </p>
+                    </li>
+                    <li class="topcoat-list__item">
+                      From the panel that appears on the right-hand side of the screen, select a theme by clicking on
+                      the
+                      cooresponding switch.
+                    </li>
+                  </ol>
+                </span>
+              </section>
+            </li>
+            <li class="topcoat-list__item">
+              <section class="card d-flex glass col align-middle text-center my-5">
+                <header class="card-header">
+                  <h3 class="text-center card-title border border-top-0 border-start-0 border-end-0">Where?</h3>
+                </header>
+                <span class="text-start p-5">
+                  <p class="p-3">
+                    The Theme-switcher Control Panel is located on the right-hand side of the screen.
+                  </p>
+                </span>
+              </section>
+            </li>
+            <li class="topcoat-list__item">
+              <section class="card d-flex glass col align-middle text-center my-5">
+                <header class="card-header">
+                  <h3 class="text-center card-title border border-top-0 border-start-0 border-end-0">When?</h3>
+                </header>
+                <span class="text-start p-5"></span>
+                <p class="p-3">
+                  The Theme-switcher Control Panel is available at all times.
                 </p>
-
-                <input
-                  type="button"
-                  class="btn btn-outline-success topcoat-button--large p-1"
-                  style="max-width:90vw;font-size:1rem;"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#theme-switcher-panel"
-                  value="🎛️"
-                />
-
-              </li>
-              <li class="topcoat-list__item">
-                From the panel that appears on the right-hand side of the screen, select a theme by clicking on the
-                cooresponding switch.
-              </li>
-            </ol>
-          </section>
-          <section class="card glass align-middle text-center">
-            <header class="card-header">
-              <h3 class="text-center card-title border border-top-0 border-start-0 border-end-0">Where?</h3>
-            </header>
-            <p class="p-3">
-              The Theme-switcher Control Panel is located on the right-hand side of the screen.
-            </p>
-          </section>
-          <section class="card glass align-middle text-center">
-            <header class="card-header">
-              <h3 class="text-center card-title border border-top-0 border-start-0 border-end-0">When?</h3>
-            </header>
-            <p class="p-3">
-              The Theme-switcher Control Panel is available at all times.
-            </p>
-          </section>
-          <section class="card glass align-middle text-center">
-            <header class="card-header">
-              <h3 class="text-center card-title border border-top-0 border-start-0 border-end-0">Who?</h3>
-            </header>
-            <p class="p-3">
-              The Theme-switcher Control Panel is available to all users.
-            </p>
-          </section>
+              </section>
+            </li>
+            <li class="topcoat-list__item border-bottom-0">
+              <section class="card d-flex glass col align-middle text-center my-5">
+                <header class="card-header">
+                  <h3 class="text-center card-title border border-top-0 border-start-0 border-end-0">Who?</h3>
+                </header>
+                <p class="p-3">
+                  The Theme-switcher Control Panel is available to all users.
+                </p>
+              </section>
+            </li>
+          </ul>
         </article>
       </main>
       <aside
-        class="container text-end offcanvas offcanvas-end glass rounded-top-5 rounded-end-0 shadow p-0"
+        class="container text-end offcanvas offcanvas-end glass border border-5 border-accent border-top-0 border-end-0 border-bottom-0 rounded-top-5 rounded-end-0 shadow p-0 ps-5"
         data-bs-scroll="true"
         data-bs-backdrop="false"
         tabindex="-1"
@@ -216,267 +250,257 @@
         aria-labelledby="theme-switcher-title"
         style="z-index: 1;"
       >
-        <header class="offcanvas-header d-block text-end py-1">
+        <header class="offcanvas-header d-block text-end py-2">
           <h2
             id="theme-switcher-title"
             class="offcanvas-title text-center"
           ></h2>
           <button
             type="button"
-            class="btn bg-primary p-2 pt-2 shadow"
+            class="btn glass text-accent border-accent p-2 pt-2 shadow"
             data-bs-dismiss="offcanvas"
             aria-label="Close"
-          ><span class="d-inline-block text-accent">▶️</span></button>
+          ><span
+              class="d-inline-block text-accent2"
+              style="transform: scale(2, 3);"
+            >▶️</span></button>
         </header>
         <form
           id="theme-select"
-          class="container-fluid glass offcanvas-body text-body border rounded-top-5 rounded-end-0 p-0"
+          class="container-fluid glass border border-accent border-end-0 border-bottom-0 offcanvas-body text-body rounded-top-5 rounded-end-0 p-0"
         >
-          <fieldset
-            id="light-themes"
-            form="theme-select"
-            class="container text-end d-block p-3 ps-0"
-          >
-            <legend class="">
-              <h3 class="">Light</h3>
-            </legend>
+          <ul class="topcoat-list-container">
+            <li class="topcoat-list__item border-top-0">
+              <fieldset
+                id="light-themes"
+                form="theme-select"
+                class="container text-end d-block p-3 ps-0"
+              >
+                <legend class="">
+                  <h3 class="">Light</h3>
+                </legend>
 
-            <label
-              for="theme-0"
-              class="my-1"
-            >
-              <h4 class="mb-0">Alien</h4>
-              <span class="topcoat-switch text-start">
-                <input
-                  name="theme"
-                  id="theme-0"
-                  type="radio"
-                  class="topcoat-switch__input"
-                  value="0"
-                />
-                <div class="topcoat-switch__toggle"></div>
-              </span>
-            </label>
+                <label
+                  for="theme-0"
+                  class="d-block my-1"
+                >
+                  <h5 class="mb-0">Alien</h5>
+                  <span class="topcoat-switch text-start">
+                    <input
+                      name="theme"
+                      id="theme-0"
+                      type="radio"
+                      class="topcoat-switch__input"
+                      value="0"
+                    />
+                    <div class="topcoat-switch__toggle"></div>
+                  </span>
+                </label>
 
-            <br />
+                <label
+                  for="theme-1"
+                  class="d-block my-1"
+                >
+                  <h5 class="mb-0">Back&nbsp;To&nbsp;The&nbsp;Future</h5>
+                  <span class="topcoat-switch text-start">
+                    <input
+                      id="theme-1"
+                      name="theme"
+                      type="radio"
+                      class="topcoat-switch__input"
+                      value="1"
+                    />
+                    <div class="topcoat-switch__toggle"></div>
+                  </span>
+                </label>
 
-            <label
-              for="theme-1"
-              class="my-1"
-            >
-              <h4 class="mb-0">Back&nbsp;To&nbsp;The&nbsp;Future</h4>
-              <span class="topcoat-switch text-start">
-                <input
-                  id="theme-1"
-                  name="theme"
-                  type="radio"
-                  class="topcoat-switch__input"
-                  value="1"
-                />
-                <div class="topcoat-switch__toggle"></div>
-              </span>
-            </label>
+                <label
+                  for="theme-2"
+                  class="d-block my-1"
+                >
+                  <h5 class="mb-0">Tatooine</h5>
+                  <span class="topcoat-switch text-start">
+                    <input
+                      id="theme-2"
+                      name="theme"
+                      type="radio"
+                      class="topcoat-switch__input"
+                      value="2"
+                    />
+                    <div class="topcoat-switch__toggle"></div>
+                  </span>
+                </label>
 
-            <br />
+                <label
+                  for="theme-3"
+                  class="d-block my-1"
+                >
+                  <h5 class="mb-0">The&nbsp;5<sup>th</sup>&nbsp;Element</h5>
+                  <span class="topcoat-switch text-start">
+                    <input
+                      id="theme-3"
+                      name="theme"
+                      type="radio"
+                      class="topcoat-switch__input"
+                      value="3"
+                    />
+                    <div class="topcoat-switch__toggle"></div>
+                  </span>
+                </label>
 
-            <label
-              for="theme-2"
-              class="my-1"
-            >
-              <h4 class="mb-0">Tatooine</h4>
-              <span class="topcoat-switch text-start">
-                <input
-                  id="theme-2"
-                  name="theme"
-                  type="radio"
-                  class="topcoat-switch__input"
-                  value="2"
-                />
-                <div class="topcoat-switch__toggle"></div>
-              </span>
-            </label>
+                <label
+                  for="theme-4"
+                  class="d-block my-1"
+                >
+                  <h5 class="mb-0">Close&nbsp;Encounters</h5>
+                  <span class="topcoat-switch text-start">
+                    <input
+                      id="theme-4"
+                      name="theme"
+                      type="radio"
+                      class="topcoat-switch__input"
+                      value="4"
+                    />
+                    <div class="topcoat-switch__toggle"></div>
+                  </span>
+                </label>
+                
+              </fieldset>
+            </li>
+            <li class="topcoat-list__item">
+              <fieldset
+                id="reset-to-default"
+                form="theme-select"
+                class="container text-end d-block border border-top-0 border-bottom-0 p-3 ps-0"
+              >
+                <legend>
+                  <h3 class="">Reset</h3>
+                </legend>
+                <label
+                  for="reset"
+                  class="my-1"
+                >
+                  <h5 class="mb-0">Default</h5>
+                  <span class="bg-transparent text-body topcoat-switch text-start">
+                    <input
+                      name="theme"
+                      type="radio"
+                      id="reset"
+                      class="topcoat-switch__input"
+                      value="default"
+                      checked
+                    />
+                    <div class="topcoat-switch__toggle"></div>
+                  </span>
+                </label>
+              </fieldset>
+            </li>
+            <li class="topcoat-list__item border-bottom-0">
+              <fieldset
+                id="dark-themes"
+                form="theme-select"
+                class="container text-end rounded-bottom d-block border border-top-0 p-3 ps-0 pb-5"
+              >
 
-            <br />
+                <legend>
+                  <h3 class="">Dark</h3>
+                </legend>
 
-            <label
-              for="theme-3"
-              class="my-1"
-            >
-              <h4 class="mb-0">The&nbsp;5<sup>th</sup>&nbsp;Element</h4>
-              <span class="topcoat-switch text-start">
-                <input
-                  id="theme-3"
-                  name="theme"
-                  type="radio"
-                  class="topcoat-switch__input"
-                  value="3"
-                />
-                <div class="topcoat-switch__toggle"></div>
-              </span>
-            </label>
+                <label
+                  for="theme-5"
+                  class="d-block my-1"
+                >
+                  <h5 class="mb-0">Blade&nbsp;Runner</h5>
+                  <span class="topcoat-switch text-start">
+                    <input
+                      id="theme-5"
+                      name="theme"
+                      type="radio"
+                      class="topcoat-switch__input"
+                      value="5"
+                    />
+                    <div class="topcoat-switch__toggle"></div>
+                  </span>
+                </label>
 
-            <br />
+                <label
+                  for="theme-6"
+                  class="d-block my-1"
+                >
+                  <h5 class="mb-0">Jurassic&nbsp;Park</h5>
+                  <span class="topcoat-switch text-start">
+                    <input
+                      id="theme-6"
+                      name="theme"
+                      type="radio"
+                      class="topcoat-switch__input"
+                      value="6"
+                    />
+                    <div class="topcoat-switch__toggle"></div>
+                  </span>
+                </label>
 
-            <label
-              for="theme-4"
-              class="my-1"
-            >
-              <h4 class="mb-0">Close&nbsp;Encounters</h4>
-              <span class="topcoat-switch text-start">
-                <input
-                  id="theme-4"
-                  name="theme"
-                  type="radio"
-                  class="topcoat-switch__input"
-                  value="4"
-                />
-                <div class="topcoat-switch__toggle"></div>
-              </span>
-            </label>
+                <label
+                  for="theme-7"
+                  class="d-block my-1"
+                >
+                  <h5 class="mb-0">Death&nbsp;Star</h5>
+                  <span class="topcoat-switch text-start">
+                    <input
+                      id="theme-7"
+                      name="theme"
+                      type="radio"
+                      class="topcoat-switch__input"
+                      value="7"
+                    />
+                    <div class="topcoat-switch__toggle"></div>
+                  </span>
+                </label>
 
-            <br />
+                <label
+                  for="theme-8"
+                  class="d-block my-1"
+                >
+                  <h5 class="mb-0">The&nbsp;Matrix</h5>
+                  <span class="topcoat-switch text-start">
+                    <input
+                      id="theme-8"
+                      name="theme"
+                      type="radio"
+                      class="topcoat-switch__input"
+                      value="8"
+                    />
+                    <div class="topcoat-switch__toggle"></div>
+                  </span>
+                </label>
 
-          </fieldset>
-
-          <fieldset
-            id="reset-to-default"
-            form="theme-select"
-            class="container text-end d-block border border-top-0 border-bottom-0 p-3 ps-0"
-          >
-            <legend>
-              <h3 class="">Reset</h3>
-            </legend>
-            <label
-              for="reset"
-              class="my-1"
-            >
-              <h4 class="mb-0">Default</h4>
-              <span class="bg-transparent text-body topcoat-switch text-start">
-                <input
-                  name="theme"
-                  type="radio"
-                  id="reset"
-                  class="topcoat-switch__input"
-                  value="default"
-                  checked
-                />
-                <div class="topcoat-switch__toggle"></div>
-              </span>
-            </label>
-          </fieldset>
-
-          <fieldset
-            id="dark-themes"
-            form="theme-select"
-            class="container text-end rounded-bottom d-block border border-top-0 p-3 ps-0 pb-5"
-          >
-
-            <legend>
-              <h3 class="">Dark</h3>
-            </legend>
-
-            <label
-              for="theme-5"
-              class="my-1"
-            >
-              <h4 class="mb-0">Blade&nbsp;Runner</h4>
-              <span class="topcoat-switch text-start">
-                <input
-                  id="theme-5"
-                  name="theme"
-                  type="radio"
-                  class="topcoat-switch__input"
-                  value="5"
-                />
-                <div class="topcoat-switch__toggle"></div>
-              </span>
-            </label>
-
-            <br />
-
-            <label
-              for="theme-6"
-              class="my-1"
-            >
-              <h4 class="mb-0">Jurassic&nbsp;Park</h4>
-              <span class="topcoat-switch text-start">
-                <input
-                  id="theme-6"
-                  name="theme"
-                  type="radio"
-                  class="topcoat-switch__input"
-                  value="6"
-                />
-                <div class="topcoat-switch__toggle"></div>
-              </span>
-            </label>
-
-            <br />
-
-            <label
-              for="theme-7"
-              class="my-1"
-            >
-              <h4 class="mb-0">Death&nbsp;Star</h4>
-              <span class="topcoat-switch text-start">
-                <input
-                  id="theme-7"
-                  name="theme"
-                  type="radio"
-                  class="topcoat-switch__input"
-                  value="7"
-                />
-                <div class="topcoat-switch__toggle"></div>
-              </span>
-            </label>
-
-            <br />
-
-            <label
-              for="theme-8"
-              class="my-1"
-            >
-              <h4 class="mb-0">The&nbsp;Matrix</h4>
-              <span class="topcoat-switch text-start">
-                <input
-                  id="theme-8"
-                  name="theme"
-                  type="radio"
-                  class="topcoat-switch__input"
-                  value="8"
-                />
-                <div class="topcoat-switch__toggle"></div>
-              </span>
-            </label>
-
-            <br />
-
-            <label
-              for="theme-9"
-              class="my-1"
-            >
-              <h4 class="mb-0">Dune</h4>
-              <span class="topcoat-switch text-start">
-                <input
-                  id="theme-9"
-                  name="theme"
-                  type="radio"
-                  class="topcoat-switch__input"
-                  value="9"
-                />
-                <div class="topcoat-switch__toggle"></div>
-              </span>
-            </label>
-
-            <br />
-          </fieldset>
+                <label
+                  for="theme-9"
+                  class="d-block my-1"
+                >
+                  <h5 class="mb-0">Dune</h5>
+                  <span class="topcoat-switch text-start">
+                    <input
+                      id="theme-9"
+                      name="theme"
+                      type="radio"
+                      class="topcoat-switch__input"
+                      value="9"
+                    />
+                    <div class="topcoat-switch__toggle"></div>
+                  </span>
+                </label>
+                
+              </fieldset>
+            </li>
+          </ul>
         </form>
 
       </aside>
     </div>
     <div
       id="page-footer"
-      class="container ms-auto fixed-bottom rounded-pill rounded-bottom-0 rounded-end-0 align-self-end w-85 text-end m-0 justify-content-end shadow border border-end-0 border-top-0 p-2 pe-0 pb-0 pt-1"
+      class="container glass ms-auto fixed-bottom rounded-pill rounded-bottom-0 rounded-end-0 align-self-end w-85 text-end m-0 justify-content-end shadow border border-end-0 border-top-0 ps-5 pe-0 pb-0 pt-1"
     >
       <footer
         class="card bg-body bg-opacity-25 jumbotron jumbotron-fluid w-100 text-start rounded-pill rounded-bottom-0 rounded-end-0 p-1 pb-0 pe-0 ps-0"
