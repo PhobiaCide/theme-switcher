@@ -73,9 +73,9 @@ html[data-theme="1"] {
 
 html[data-theme="2"] {
   --color-primary: #dba05c;
-  --color-accent2: #9995bc;
+  --color-accent2: #8eafd8;
   --color-secondary: #e9cca4;
-  --color-accent: #8eafd8;
+  --color-accent: #9995bc;
   --symbol: "🤎";
 }
 
@@ -89,17 +89,17 @@ html[data-theme="3"] {
 
 html[data-theme="4"] {
   --color-primary: #84caec;
-  --color-accent2: #fcec86;
+  --color-accent2: #ff9969;
   --color-secondary: #efb7dc;
-  --color-accent: #ff9969;
+  --color-accent: #fcec86;
   --symbol: "💛";
 }
 
 html[data-theme="5"] {
   --color-primary: #d88f00;
-  --color-accent2: #812a89;
+  --color-accent2: #ff6cdc;
   --color-secondary: #efca93;
-  --color-accent: #ff6cdc;
+  --color-accent: #812a89;
   --symbol: "💜";
 }
 
@@ -129,9 +129,9 @@ html[data-theme="8"] {
 
 html[data-theme="9"] {
   --color-primary: #de8735;
-  --color-accent2: #a11225;
+  --color-accent2: #b5a492;
   --color-secondary: #f4c16e;
-  --color-accent: #b5a492;
+  --color-accent: #a11225;
   --symbol: "💙";
 }
 
@@ -263,7 +263,7 @@ ul {
   font-weight: 999;
 }
 
-/*
+
 .topcoat-switch__toggle:before {
 	color: #00aa00aa!important;
 }
@@ -271,7 +271,7 @@ ul {
 .topcoat-switch__toggle:after {
   color: #aa0000aa !important;
 }
-*/
+
 
 .bg-theme-accent {
   background-color: var(--color-accent) !important;
@@ -287,4 +287,20 @@ ul {
 
 .bg-theme-primary {
   background-color: var(--color-primary) !important;
+}
+
+.border-primary {
+  border-color: var(--color-primary) !important;
+}
+
+.border-accent {
+  border-color: var(--color-accent) !important;
+}
+
+.border-secondary {
+  border-color: var(--color-secondary) !important;
+}
+
+.border-accent2 {
+  border-color: var(--color-accent2) !important;
 }

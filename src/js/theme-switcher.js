@@ -1,5 +1,5 @@
 // Constants and Destructuring
-const { body, documentElement, getElementsByName } = document;
+const { body, documentElement } = document;
 const widthBreakpoint = 768;
 
 // Local Storage Functions
@@ -9,41 +9,30 @@ const getStoredTheme = () => localStorage.getItem("theme") || null;
 // Theme-related Functions
 const themeElements = document.getElementsByName("theme");
 
-const getSelectedTheme = () =>
-{
-  let selectedTheme = null;
-  for (let themeElement of themeElements) {
-    if (themeElement.checked === true) {
-      selectedTheme = themeElement.value;
-      break;
-    }
-  }
-  return selectedTheme;
+const getSelectedTheme = () => {
+  const selectedThemeElement = Array.from(themeElements).find((element) => element.checked);
+  return selectedThemeElement ? selectedThemeElement.value : null;
 };
 
-const activateTheme = () =>
-{
+const activateTheme = () => {
   const theme = getSelectedTheme();
-  documentElement.setAttribute("data-theme", theme); // Change activeMode to theme
+  documentElement.setAttribute("data-theme", theme);
   storeTheme(theme);
 };
 
 // Theme Mode Functions
-const determineMode = () => (+documentElement.getAttribute("data-theme") >= 5) ? "dark" : "light";
+const determineMode = () => (parseInt(documentElement.getAttribute("data-theme"), 10) >= 5) ? "dark" : "light";
 
 // Initialization
 const applyMode = () => document.documentElement.setAttribute("data-bs-theme", determineMode());
 
-document.addEventListener("DOMContentLoaded", () =>
-{
+document.addEventListener("DOMContentLoaded", () => {
   applyMode();
   donTopcoat();
 
   // Event listener for theme selection
-  themeElements.forEach((element) =>
-  {
-    element.addEventListener("click", () =>
-    {
+  themeElements.forEach((element) => {
+    element.addEventListener("click", () => {
       activateTheme();
       applyMode();
     });
@@ -51,20 +40,11 @@ document.addEventListener("DOMContentLoaded", () =>
 });
 
 // Topcoat Functions
-const getScreenSize = () => {
-  const isDesktop = () => window.innerWidth >= widthBreakpoint;
+const getScreenSize = () => (window.innerWidth >= widthBreakpoint) ? 'desktop' : 'mobile';
 
-  return (isDesktop() ? 'desktop' : 'mobile');
-}
+const constructTopcoatHref = (themeMode) => `https://cdnjs.cloudflare.com/ajax/libs/topcoat/0.8.0/css/topcoat-${getScreenSize()}-${themeMode}.min.css`;
 
-const constructTopcoatHref = (themeMode) => {
-  const baseRef = 'https://cdnjs.cloudflare.com/ajax/libs/topcoat/0.8.0/css/topcoat-';
-  
-  return `${baseRef}${getScreenSize()}-${themeMode}.min.css`;
-}
-
-const donTopcoat = () =>
-{
+const donTopcoat = () => {
   const activeMode = document.documentElement.getAttribute('data-bs-theme').valueOf();
   console.log(`Active mode: ${activeMode}`);
 
@@ -72,19 +52,19 @@ const donTopcoat = () =>
   console.log(`Topcoat href: ${href}`);
 
   const topcoat = document.getElementById('topcoat-stylesheet');
-  console.log(`Topcoat element: ${topcoat.id}`); // Fix: Log the id property of the topcoat element
+  console.log(`Topcoat element: ${topcoat ? topcoat.id : 'Not found'}`); // Log the id property of the topcoat element if found
 
-  topcoat.setAttribute('href', href);
-  applyMode();
+  if (topcoat) {
+    topcoat.setAttribute('href', href);
+    applyMode();
+  }
 };
 
 window.addEventListener('resize', donTopcoat);
 
 // Create a MutationObserver instance
-const observer = new MutationObserver((mutations) =>
-{
-  mutations.forEach((mutation) =>
-  {
+const observer = new MutationObserver((mutations) => {
+  mutations.forEach((mutation) => {
     if (mutation.attributeName === 'data-theme') {
       donTopcoat();
     }
