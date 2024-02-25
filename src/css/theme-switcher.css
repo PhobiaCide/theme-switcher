@@ -23,7 +23,7 @@ body {
 }
 
 .glass {
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(3px);
 }
 
 html[data-bs-theme="light"] .glass {
