@@ -9,6 +9,9 @@ body {
 
 }
 
+.bg-opacity-10 {
+  background-color: rgba(var(--color-primary), 0.1);
+}
 .w-80 {
   width: 80%;
 }
@@ -23,7 +26,7 @@ body {
 }
 
 .glass {
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(13px) saturate(1.6);
 }
 
 html[data-bs-theme="light"] .glass {
@@ -265,11 +268,15 @@ ul {
 
 
 .topcoat-switch__toggle:before {
-	color: #00aa00aa!important;
+  color: var(--color-accent)
+      /*#00aa00aa*/
+      !important;
 }
 
 .topcoat-switch__toggle:after {
-  color: #aa0000aa !important;
+  color: var(--color-accent2)
+      /*#aa0000aa*/
+      !important;
 }
 
 
