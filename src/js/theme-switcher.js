@@ -1,5 +1,5 @@
 // Constants and Destructuring
-const { body, documentElement, getElementsByName } = document;
+const { body, getElementsByName } = document;
 const widthBreakpoint = 768;
 
 // Local Storage Functions
@@ -10,16 +10,15 @@ const getSavedTheme = () => localStorage.getItem("theme");
 const getThemeElements = () => [...document.getElementsByName("theme")];
 const getSelectedTheme = () => getThemeElements()?.filter(element => element?.checked)[0]?.value;
 
-
 const applyTheme = (theme) => {
   const attribute = "data-theme";
-  documentElement.setAttribute(attribute, theme);
+  body.setAttribute(attribute, theme);
   saveSelectedTheme(theme);
 };
 
 // Theme Mode Functions
 const getThemeMode = () => {
-  const mode = documentElement.getAttribute("data-theme");
+  const mode = body.getAttribute("data-theme");
   const isDark = () => (mode >= 5);
 
   return isDark() ? "dark" : "light";
@@ -28,17 +27,15 @@ const getThemeMode = () => {
 // Initialization
 const applyMode = (mode) => {
   const attribute = "data-bs-theme";
-  document.documentElement.setAttribute(attribute, mode);
+  body.setAttribute(attribute, mode);
 };
 
 document.addEventListener("DOMContentLoaded", () => {
   const savedTheme = getSavedTheme();
 
-  if (savedTheme)
-  {
+  if (savedTheme) {
     applyTheme(savedTheme);
-  } else
-  {
+  } else {
     // If no saved theme, use the user's preferred color scheme
     applyMode(getThemeMode());
   }

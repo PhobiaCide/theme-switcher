@@ -26,22 +26,41 @@ body {
 }
 
 .glass {
-  backdrop-filter: blur(13px) saturate(1.6);
+  backdrop-filter: blur(21px) saturate(1.0) opacity(0.3);
+  filter: opacity(0.99);
+  -webkit-filter: opacity(0.993);
 }
 
-html[data-bs-theme="light"] .glass {
-  background-color: rgba(255, 255, 255, 0.1);
+body[data-bs-theme="light"] .glass {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: brightness(1.1);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
-html[data-bs-theme="dark"] .glass {
-  background-color: rgba(0, 0, 0, 0.1);
+body[data-bs-theme="dark"] .glass {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: brightness(0.9);
   box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.1);
 }
-
-body {
-  overflow-x: hidden;
+body[data-bs-theme="dark"] {
+  background-blend-mode: multiply;
 }
+
+body[data-bs-theme="light"] {
+  background-blend-mode: hard-light;
+}
+
+body[data-bs-theme="dark"] .bg-body {
+  background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+body[data-bs-theme="light"] .bg-body {
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: hard-light;
+}
+
+
 
 #made-with::after {
   content: var(--symbol);
@@ -50,63 +69,14 @@ body {
 }
 
 /* Default theme */
-html[data-theme="default"] {
+body[data-theme="default"] {
   --color-primary: #eee;
   --color-secondary: #555;
   --color-accent: #aaa;
   --color-accent2: #555;
   --symbol: "💔";
 }
-
-html[data-theme="0"] {
-  --color-primary: #d2ff06;
-  --color-accent2: #042a05;
-  --color-secondary: #15aa5c;
-  --color-accent: #258073;
-  --symbol: "🖤";
-}
-
-html[data-theme="1"] {
-  --color-primary: #e02411;
-  --color-accent2: #1e4ea0;
-  --color-secondary: #ffa913;
-  --color-accent: #569ced;
-  --symbol: "💙";
-}
-
-html[data-theme="2"] {
-  --color-primary: #dba05c;
-  --color-accent2: #8eafd8;
-  --color-secondary: #e9cca4;
-  --color-accent: #9995bc;
-  --symbol: "🤎";
-}
-
-html[data-theme="3"] {
-  --color-primary: #f3f1ed;
-  --color-accent2: #0b190c;
-  --color-secondary: #fffd6e;
-  --color-accent: #ff6100;
-  --symbol: "🖤";
-}
-
-html[data-theme="4"] {
-  --color-primary: #84caec;
-  --color-accent2: #ff9969;
-  --color-secondary: #efb7dc;
-  --color-accent: #fcec86;
-  --symbol: "💛";
-}
-
-html[data-theme="5"] {
-  --color-primary: #d88f00;
-  --color-accent2: #ff6cdc;
-  --color-secondary: #efca93;
-  --color-accent: #812a89;
-  --symbol: "💜";
-}
-
-html[data-theme="6"] {
+body[data-theme="0"] {
   --color-primary: #4b4921;
   --color-accent2: #f01c1f;
   --color-secondary: #2a8a56;
@@ -114,45 +84,103 @@ html[data-theme="6"] {
   --symbol: "💚";
 }
 
-html[data-theme="7"] {
+body[data-theme="1"] {
+  --color-primary: #e02411;
+  --color-accent2: #1e4ea0;
+  --color-secondary: #ffa913;
+  --color-accent: #569ced;
+  --symbol: "💙";
+}
+
+body[data-theme="2"] {
+  --color-primary: #dba05c;
+  --color-accent2: #8eafd8;
+  --color-secondary: #e9cca4;
+  --color-accent: #9995bc;
+  --symbol: "🤎";
+}
+
+body[data-theme="3"] {
+  --color-primary: #f3f1ed;
+  --color-accent2: #0b190c;
+  --color-secondary: #fffd6e;
+  --color-accent: #ff6100;
+  --symbol: "🖤";
+}
+
+body[data-theme="4"] {
+  --color-primary: #84caec;
+  --color-accent: #ff9969;
+  --color-secondary: #efb7dc;
+  --color-accent2: #fcec86;
+  --symbol: "💛";
+}
+
+body[data-theme="5"] {
+  --color-primary: #d88f00;
+  --color-accent: #ff6cdc;
+  --color-secondary: #efca93;
+  --color-accent2: #812a89;
+  --symbol: "💜";
+}
+
+body[data-theme="6"] {
+  --color-primary: #d2ff06;
+  --color-secondary: #042a05;
+  --color-accent: #15aa5c;
+  --color-accent2: #258073;
+  --symbol: "🖤";
+}
+
+body[data-theme="7"] {
   --color-primary: #f5f5f5;
-  --color-accent2: #f02;
+  --color-accent: #f02;
   --color-secondary: #9ea5a8;
-  --color-accent: #ff6800;
+  --color-accent2: #ff6800;
   --symbol: "❤️";
 }
 
-html[data-theme="8"] {
+body[data-theme="8"] {
   --color-primary: #031624;
-  --color-accent2: #30ffa4;
+  --color-accent: #30ffa4;
   --color-secondary: #044b4a;
-  --color-accent: #5fbe92;
+  --color-accent2: #5fbe92;
   --symbol: "💚";
 }
 
-html[data-theme="9"] {
+body[data-theme="9"] {
   --color-primary: #de8735;
-  --color-accent2: #b5a492;
+  --color-accent: #b5a492;
   --color-secondary: #f4c16e;
-  --color-accent: #a11225;
+  --color-accent2: #a11225;
   --symbol: "💙";
 }
 
 * {
   --gradient: radial-gradient(ellipse farthest-corner at right bottom,
-      var(--color-accent2) 2%,
-      var(--color-primary) 12%,
-      var(--color-primary) 18%,
+  transparent 0%,    
+  var(--color-accent2) 9%,
+      transparent 10%,
+      var(--color-primary) 11%,
+      transparent 21%,
+      var(--color-accent2) 22%,
+      transparent 32%,
       var(--color-accent) 33%,
-      var(--color-secondary) 50%,
+      transparent 43%,
+      var(--color-secondary) 44%,
       transparent 80%),
     radial-gradient(ellipse farthest-corner at left top,
-      var(--color-accent2) 2%,
-      var(--color-primary) 12%,
-      var(--color-primary) 18%,
-      var(--color-accent) 33%,
-      var(--color-secondary) 50%,
-      transparent 80%);
+    transparent 1%,
+      var(--color-accent2) 11%,
+      transparent 12%,
+      var(--color-primary) 22%,
+      transparent 23%,
+      var(--color-accent2) 44%,
+      transparent 45%,
+      var(--color-accent) 66%,
+      transparent 67%,
+      var(--color-secondary) 88%,
+      transparent 89%);
 
   --gradient2: radial-gradient(ellipse farthest-corner at right bottom,
       #888888ee 5%,
@@ -190,7 +218,12 @@ html[data-theme="9"] {
 
 }
 
-.gradient2 {
+.bg-body {
+  backdrop-filter: opacity(0.9);
+  background-blend-mode: hard-light;
+}
+
+.bg-gradient2 {
   background-image: var(--gradient2);
   background-repeat: no-repeat;
   background-position: center;
@@ -233,18 +266,23 @@ html[data-theme="9"] {
   color: var(--color-accent2) !important;
 }
 
-
-.card {
-  text-rendering: geometricPrecision;
-  backdrop-filter: blur(90vw);
+.border-primary {
+  border-color: var(--color-primary) !important;
 }
 
-input,
-button {
-  max-width: 90vw;
+.border-accent {
+  border-color: var(--color-accent) !important;
 }
 
-.gradient {
+.border-secondary {
+  border-color: var(--color-secondary) !important;
+}
+
+.border-accent2 {
+  border-color: var(--color-accent2) !important;
+}
+
+.bg-gradient {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -277,37 +315,4 @@ ul {
   color: var(--color-accent2)
       /*#aa0000aa*/
       !important;
-}
-
-
-.bg-theme-accent {
-  background-color: var(--color-accent) !important;
-}
-
-.bg-theme-accent2 {
-  background-color: var(--color-accent2) !important;
-}
-
-.bg-theme-secondary {
-  background-color: var(--color-secondary) !important;
-}
-
-.bg-theme-primary {
-  background-color: var(--color-primary) !important;
-}
-
-.border-primary {
-  border-color: var(--color-primary) !important;
-}
-
-.border-accent {
-  border-color: var(--color-accent) !important;
-}
-
-.border-secondary {
-  border-color: var(--color-secondary) !important;
-}
-
-.border-accent2 {
-  border-color: var(--color-accent2) !important;
 }
